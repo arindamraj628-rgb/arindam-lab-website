@@ -1,6 +1,6 @@
 ---
 name: Arindam Raj
-image: images/photo.jpg
+image: images/pic_arindam_headshot.JPG
 role: Principal Investigator
 affiliation: Northwestern University
 aliases:
