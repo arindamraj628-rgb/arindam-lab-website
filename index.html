@@ -386,45 +386,47 @@
         
           <svg xmlns="http://www.w3.org/2000/svg" viewbox="25 40 150 130" width="100%" height="100%">
   <defs>
-    <!-- Polycrystalline Microstructure Base -->
+    <!-- Polycrystalline Microstructure Base (EBSD / Orientation Map Palette) -->
     <g id="microstructure">
-      <!-- Base metal color -->
-      <rect width="60" height="60" fill="#9ca3af"></rect>
-      <!-- Individual grains -->
-      <path d="M0,0 L20,10 L15,30 L0,20 Z" fill="#d1d5db"></path>
-      <path d="M20,10 L45,5 L55,25 L35,40 L15,30 Z" fill="#f3f4f6"></path>
-      <path d="M45,5 L60,0 L60,20 L55,25 Z" fill="#6b7280"></path>
-      <path d="M0,20 L15,30 L10,50 L0,60 L0,40 Z" fill="#9ca3af"></path>
-      <path d="M15,30 L35,40 L30,60 L10,50 Z" fill="#4b5563"></path>
-      <path d="M35,40 L55,25 L60,20 L60,45 L50,60 L30,60 Z" fill="#d1d5db"></path>
-      <path d="M60,45 L60,60 L50,60 Z" fill="#6b7280"></path>
+      <!-- Base grain color -->
+      <rect width="60" height="60" fill="#2563eb"></rect>
+      
+      <!-- Individual grains with orientation hues -->
+      <path d="M0,0 L20,10 L15,30 L0,20 Z" fill="#ef4444"></path>
+      <path d="M20,10 L45,5 L55,25 L35,40 L15,30 Z" fill="#10b981"></path>
+      <path d="M45,5 L60,0 L60,20 L55,25 Z" fill="#f59e0b"></path>
+      <path d="M0,20 L15,30 L10,50 L0,60 L0,40 Z" fill="#8b5cf6"></path>
+      <path d="M15,30 L35,40 L30,60 L10,50 Z" fill="#ec4899"></path>
+      <path d="M35,40 L55,25 L60,20 L60,45 L50,60 L30,60 Z" fill="#06b6d4"></path>
+      <path d="M60,45 L60,60 L50,60 Z" fill="#eab308"></path>
+      
       <!-- High-contrast grain boundaries -->
-      <path d="M0,20 L15,30 L35,40 L55,25 L60,20 M20,10 L15,30 M45,5 L55,25 M15,30 L10,50 M35,40 L30,60 M55,25 L60,45 M50,60 L60,45" fill="none" stroke="#1f2937" stroke-width="1.5"></path>
+      <path d="M0,20 L15,30 L35,40 L55,25 L60,20 M20,10 L15,30 M45,5 L55,25 M15,30 L10,50 M35,40 L30,60 M55,25 L60,45 M50,60 L60,45" fill="none" stroke="#0f172a" stroke-width="1.5"></path>
     </g>
 
-    <!-- Top Face Pattern: Light exposure -->
+    <!-- Top Face Pattern: Light highlight overlay -->
     <pattern id="top-grains" width="60" height="60" patternunits="userSpaceOnUse" patterntransform="scale(0.8) rotate(15)">
       <use href="#microstructure"></use>
       <rect width="60" height="60" fill="rgba(255,255,255,0.2)"></rect>
     </pattern>
 
-    <!-- Left Face Pattern: Mid exposure -->
+    <!-- Left Face Pattern: Mild side shading overlay -->
     <pattern id="left-grains" width="60" height="60" patternunits="userSpaceOnUse" patterntransform="scale(0.8) rotate(65)">
       <use href="#microstructure"></use>
-      <rect width="60" height="60" fill="rgba(0,0,0,0.15)"></rect>
+      <rect width="60" height="60" fill="rgba(0,0,0,0.1)"></rect>
     </pattern>
 
-    <!-- Right Face Pattern: Shadowed exposure -->
+    <!-- Right Face Pattern: Dark shadow overlay -->
     <pattern id="right-grains" width="60" height="60" patternunits="userSpaceOnUse" patterntransform="scale(0.8) rotate(-25)">
       <use href="#microstructure"></use>
-      <rect width="60" height="60" fill="rgba(0,0,0,0.4)"></rect>
+      <rect width="60" height="60" fill="rgba(0,0,0,0.35)"></rect>
     </pattern>
   </defs>
 
   <style>
     .plastic-cube {
       transform-origin: 100px 110px;
-      /* 5-second loop mimicking elastic loading, plastic shear flow, and relaxation */
+      /* 5-second continuous plastic shear deformation cycle */
       animation: plasticDeformation 5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
     }
 
@@ -444,19 +446,19 @@
     }
   </style>
 
-  <!-- Soft background glow -->
-  <circle cx="100" cy="100" r="60" fill="#9ca3af" opacity="0.1" filter="blur(10px)"></circle>
+  <!-- Ambient background glow -->
+  <circle cx="100" cy="100" r="60" fill="#3b82f6" opacity="0.12" filter="blur(10px)"></circle>
 
-  <!-- Animated Polycrystalline Cube Group -->
+  <!-- Animated Polycrystalline Cube -->
   <g class="plastic-cube">
     <!-- Top Face -->
-    <polygon points="100,55 145,78 100,101 55,78" fill="url(#top-grains)" stroke="#374151" stroke-width="1.5" stroke-linejoin="round"></polygon>
+    <polygon points="100,55 145,78 100,101 55,78" fill="url(#top-grains)" stroke="#1e293b" stroke-width="1.5" stroke-linejoin="round"></polygon>
     
     <!-- Left Face -->
-    <polygon points="55,78 100,101 100,155 55,132" fill="url(#left-grains)" stroke="#374151" stroke-width="1.5" stroke-linejoin="round"></polygon>
+    <polygon points="55,78 100,101 100,155 55,132" fill="url(#left-grains)" stroke="#1e293b" stroke-width="1.5" stroke-linejoin="round"></polygon>
     
     <!-- Right Face -->
-    <polygon points="100,101 145,78 145,132 100,155" fill="url(#right-grains)" stroke="#374151" stroke-width="1.5" stroke-linejoin="round"></polygon>
+    <polygon points="100,101 145,78 145,132 100,155" fill="url(#right-grains)" stroke="#1e293b" stroke-width="1.5" stroke-linejoin="round"></polygon>
   </g>
 </svg>
 
