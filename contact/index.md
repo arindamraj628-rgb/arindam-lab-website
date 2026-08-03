@@ -52,7 +52,18 @@ Feel free to reach out for any queries, discussions, or collaborations!
 
 {% endcapture %}
 
-{% include cols.html col1=col1 col2=col2 %}
+{% capture col3 %}
+
+{%
+  include figure.html
+  image="images/iitk_undergrad.jpg"
+  caption="and Indian Institute of Technology, Kanpur"
+  style="aspect-ratio: 16 / 9; object-fit: cover; width: 100%;"
+%}
+
+{% endcapture %}
+
+{% include cols.html col1=col1 col2=col2 col3=col3 %}
 
 {% include section.html dark=true %}
 
