@@ -1,10 +1,9 @@
 ---
 ---
 
-# arindamraj628-rgb's Website
+# Arindam Raj's Website
 
-An engaging 1-3 sentence description of your lab.
-
+Materials Science at Multiple Lengthscales!
 {% include section.html %}
 
 ## Highlights
