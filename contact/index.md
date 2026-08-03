@@ -56,7 +56,7 @@ Feel free to reach out for any queries, discussions, or collaborations!
 
 {%
   include figure.html
-  image="images/iitk_undergrad.jpg"
+  image="images/iit_undergrad.jpg"
   caption="and Indian Institute of Technology, Kanpur"
   style="aspect-ratio: 16 / 9; object-fit: cover; width: 100%;"
 %}
