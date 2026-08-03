@@ -203,19 +203,14 @@ header nav a, .nav-link {
   text-shadow: 0 2px 6px rgba(0, 0, 0, 0.8) !important;
   letter-spacing: 1px;
 }
-/* Translucent bar with fuzzy background blur behind header text */
-header .container, .header-content, .hero-inner {
-  background: rgba(15, 23, 42, 0.55) !important; /* Translucent dark bar */
-  backdrop-filter: blur(10px) !important;         /* Blurs the SEM image behind the bar */
-  -webkit-backdrop-filter: blur(10px) !important; /* Safari support */
+/* Target the header element directly */
+header {
+  /* Dark translucent backdrop + blur over the background image */
+  background-color: rgba(15, 23, 42, 0.65) !important;
+  backdrop-filter: blur(12px) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
 
-  /* Shape and Spacing */
-  max-width: 850px !important;
+  /* Padding to give the text space */
+  padding: 3rem 1.5rem !important;
   margin: 0 auto !important;
-  padding: 2rem 2.5rem !important;
-  border-radius: 16px !important;
-  
-  /* Subtle border & shadow to make it lift off the background */
-  border: 1px solid rgba(255, 255, 255, 0.15) !important;
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4) !important;
 }
