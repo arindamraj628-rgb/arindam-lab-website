@@ -13,7 +13,7 @@ Here are some representative publications. For a full list, visit my <Google Sch
 
 ## Highlighted
 
-{% include citation.html lookup="Open collaborative writing with Manubot" style="rich" %}
+{% include citation.html lookup="Direct determination of diffusion flux in alloys via spatial separation of flux" style="rich" %}
 
 {% include section.html %}
 
