@@ -11,10 +11,10 @@ proofer: false
 links:
   email: contact@arindamraj628-rgb.com
   orcid: 0000-0001-8713-9213
-  google-scholar: ETJoidYAAAAJ
+  google-scholar: 3Fk2GOoAAAAJ
   github: arindamraj628-rgb
-  twitter: arindamraj628-rgb
-  youtube: arindamraj628-rgb
+ # twitter: arindamraj628-rgb
+  #youtube: arindamraj628-rgb
 
 ### jekyll settings
 
