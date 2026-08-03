@@ -55,7 +55,7 @@ Feel free to reach out for any queries, discussions, or collaborations!
 {% include section.html dark=true %}
 
 {% capture col1 %}
-#add text if needed
+
 {% endcapture %}
 
 {% capture col2 %}
