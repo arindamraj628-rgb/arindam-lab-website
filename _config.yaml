@@ -1,7 +1,7 @@
 # site properties and page defaults
-title: MAGIC Lab
-subtitle: "<b>M</b>aterials Science of <b>A</b>lloys, <b>G</b>lasses, <b>I</b>nterfaces, and <b>C</b>omposites Lab"
-description: At the MAGIC (Materials Science of Alloys, Glasses, Interfaces, and Composites) Lab, we develop novel characteriaiton and fabricaiton techniques for complex materials at multiple lengthscales.
+title: MSC Lab
+subtitle: "<b>M</b>ultiscale <b>C</b>haracterization, and <b>S</b>ynthesis"
+description: At the MSC Lab, we develop novel characteriaiton and fabricaiton techniques for complex materials at multiple lengthscales.
 header: images/background1.png
 footer: images/background1.png
 proofer: false
