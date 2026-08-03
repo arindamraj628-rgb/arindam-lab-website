@@ -203,3 +203,28 @@ header nav a, .nav-link {
   text-shadow: 0 2px 6px rgba(0, 0, 0, 0.8) !important;
   letter-spacing: 1px;
 }
+
+/* 1. Keep outer header stretched full-width */
+header {
+  width: 100% !important;
+  background-size: cover !important;
+  background-position: center !important;
+  padding: 3rem 1rem !important;
+}
+
+/* 2. Style the inner elements into a translucent card */
+header > div, 
+header > .container, 
+header > .wrapper, 
+header > .inner {
+  background: rgba(15, 23, 42, 0.65) !important;
+  backdrop-filter: blur(12px) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
+  
+  max-width: 850px !important;
+  margin: 0 auto !important; /* Centers ONLY the inner card, not the header */
+  padding: 2rem !important;
+  border-radius: 16px !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5) !important;
+}
