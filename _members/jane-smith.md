@@ -11,11 +11,7 @@ links:
   home-page: https://arindamraj628-rgb.github.io/arindam-lab-website/
   orcid: 0000-0001-7277-6770
 ---
+I am interested in fabrication and mechanical characterization of away from equilibrium and/or multiphase materials.
+Leveraging my knowledge in materials thermodynamics and mechanics, I design and study materials with desired mechanical properties in diverse systems to suit a wide range of applications, spanning alloys, metallic glasses to soft, colloidal polymeric systems, and composites thereof.
+<img width="5420" height="305" alt="image" src="https://github.com/user-attachments/assets/9a3a3e5e-93b6-4a9c-8924-fa1eebcfb51d" />
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-Faucibus purus in massa tempor nec feugiat nisl pretium fusce.
-Elit at imperdiet dui accumsan.
-Duis tristique sollicitudin nibh sit amet commodo nulla facilisi.
-Vitae elementum curabitur vitae nunc sed velit dignissim sodales.
-Lacinia at quis risus sed vulputate odio ut.
-Magna eget est lorem ipsum.
