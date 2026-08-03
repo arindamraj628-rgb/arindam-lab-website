@@ -66,10 +66,10 @@
 
   <meta name="author" content="john-doe">
   <meta property="og:type" content="article">
-  <meta property="og:updated_time" content="2026-08-03T06:48:48+00:00">
+  <meta property="og:updated_time" content="2026-08-03T06:49:05+00:00">
   <meta property="article:published_time" content="2023-02-23T00:00:00+00:00">
-  <meta property="article:modified_time" content="2026-08-03T06:48:48+00:00">
-  <meta name="revised" content="2026-08-03T06:48:48+00:00">
+  <meta property="article:modified_time" content="2026-08-03T06:49:05+00:00">
+  <meta name="revised" content="2026-08-03T06:49:05+00:00">
 
 
 <script type="application/ld+json">
@@ -79,7 +79,7 @@
       "@type": "BlogPosting",
       "author": { "@type": "Person", "name": "Example post 3" },
       "datePublished": "2023-02-23T00:00:00+00:00",
-      "dateModified": "2026-08-03T06:48:48+00:00",
+      "dateModified": "2026-08-03T06:49:05+00:00",
     
     "name": "Example post 3",
     "description": "&lt;b&gt;M&lt;/b&gt;aterials science of &lt;b&gt;A&lt;/b&gt;lloys, &lt;b&gt;G&lt;/b&gt;lasses, &lt;b&gt;I&lt;/b&gt;nterfaces, and &lt;b&gt;C&lt;/b&gt;omposites Lab. At the MAGIC (Materials science of Alloys, Glasses, Interfaces, and Composites) Lab, we develop novel characteriaiton and fabricaiton techniques for complex materials at multiple lengthscales.",
@@ -335,6 +335,54 @@
 
 <header class="background" style="--image: url('/arindam-lab-website/images/background.jpg')" data-dark="true">
   <a href="/arindam-lab-website/" class="home">
+    
+      <span class="logo">
+        
+          <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 200 200" width="100%" height="100%">
+  <style>
+    .plastic-cube {
+      transform-origin: 100px 110px;
+      animation: plasticDeformation 5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+    }
+
+    @keyframes plasticDeformation {
+      0%, 100% {
+        /* Initial state: elastic loading phase */
+        transform: scale(1, 1) skewX(0deg);
+      }
+      20% {
+        /* Yield point reached */
+        transform: scale(1.05, 0.95) skewX(5deg);
+      }
+      50% {
+        /* Maximum plastic shear flow / elongation */
+        transform: scale(1.15, 0.85) skewX(22deg);
+      }
+      75% {
+        /* Necking/relaxation transition */
+        transform: scale(1.08, 0.92) skewX(10deg);
+      }
+    }
+  </style>
+
+  <!-- Background glow for depth -->
+  <circle cx="100" cy="100" r="60" fill="#0284c7" opacity="0.1" filter="blur(10px)"></circle>
+
+  <!-- Deforming Isometric Cube Group -->
+  <g class="plastic-cube">
+    <!-- Top Face -->
+    <polygon points="100,55 145,78 100,101 55,78" fill="#7dd3fc"></polygon>
+    
+    <!-- Left Face -->
+    <polygon points="55,78 100,101 100,155 55,132" fill="#38bdf8"></polygon>
+    
+    <!-- Right Face -->
+    <polygon points="100,101 145,78 145,132 100,155" fill="#0284c7"></polygon>
+  </g>
+</svg>
+
+        
+      </span>
     
     
       <span class="title-text" data-tooltip="Home">
