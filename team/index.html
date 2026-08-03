@@ -406,7 +406,7 @@
       <rect width="60" height="60" fill="rgba(255,255,255,0.08)"></rect>
     </pattern>
 
-    <!-- Specimen Soft Glow/Shadow -->
+    <!-- Specimen Soft Glow -->
     <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
       <fedropshadow dx="0" dy="4" stddeviation="6" flood-color="#3b82f6" flood-opacity="0.2"></fedropshadow>
     </filter>
@@ -415,25 +415,20 @@
   <style>
     .plastic-dogbone {
       transform-origin: 160px 70px;
-      /* Smooth 5-second continuous tensile loading, plastic flow, and relaxation loop */
       animation: plasticTensileFlow 5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
     }
 
     @keyframes plasticTensileFlow {
       0%, 100% {
-        /* Undeformed initial state */
         transform: scale(1, 1);
       }
       20% {
-        /* Elastic loading strain */
         transform: scale(1.08, 0.96);
       }
       50% {
-        /* Maximum plastic extension & lateral necking contraction */
         transform: scale(1.24, 0.80);
       }
       75% {
-        /* Unloading with residual plastic strain */
         transform: scale(1.10, 0.93);
       }
     }
