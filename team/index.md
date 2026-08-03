@@ -14,7 +14,7 @@ Feel free to reach out for any queries, discussions, or collaborations!
 {% include list.html data="members" component="portrait" filter="role == 'pi'" %}
 {% include list.html data="members" component="portrait" filter="role != 'pi'" %}
 
-{% include section.html background="images/background.jpg" dark=true %}
+{% include section.html background="images/background1.jpg" dark=true %}
 
 Feel free to reach out for any queries, discussions, or collaborations!
 
