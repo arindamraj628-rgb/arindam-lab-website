@@ -36,6 +36,7 @@ Feel free to reach out for any queries, discussions, or collaborations!
   include figure.html
   image="contact/NU1_postdoc.jpg"
   caption="Currently at Northwestern University"
+  style="aspect-ratio: 16 / 9; object-fit: cover; width: 100%;"
 %}
 
 {% endcapture %}
@@ -46,6 +47,7 @@ Feel free to reach out for any queries, discussions, or collaborations!
   include figure.html
   image="contact/yale_phd1.jpg"
   caption="via Yale University"
+  style="aspect-ratio: 16 / 9; object-fit: cover; width: 100%;"
 %}
 
 {% endcapture %}
