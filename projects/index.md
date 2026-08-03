@@ -2,15 +2,14 @@
 title: Research 
 nav:
   order: 1
-  tooltip: Major Research Themes
+  tooltip: Research Themes and Projects
 ---
 
-# {% include icon.html icon="fa-solid fa-wrench" %}Projects
+# {% include icon.html icon="fa-solid fa-wrench" %} Research Themes and Projects
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+We develop high-throughput multiscale characterization and non-equilibrium interfacial synthesis techaniues to design damage-tolerant alloys that can accommodate and repair structural damage. By using and extending nanomolding based Local Deformation Mapping which I invented, I  study transport phenomenon and the emergent mechanical properties across multiple length scales with nanoscale resolution. Crucially, these transport properties are strong indicators of the ability to mitigate damage, accommodate defects, and even heal. Concurrently, by translating fabrication strategies used in colloidal chemistry to physical metallurgy related protocols, we also develop novel composite microstructures with nanoscale composition control by incorporating nanomaterials in the alloy matrix. 
 
-{% include tags.html tags="publication, resource, website" %}
+#{% include tags.html tags="publication, resource, website" %}
 
 {% include search-info.html %}
 
