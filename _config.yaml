@@ -1,7 +1,7 @@
 # site properties and page defaults
 title: MAGIC Lab
-subtitle: "<b>M</b>aterials science of <b>A</b>lloys, <b>G</b>lasses, <b>I</b>nterfaces, and <b>C</b>omposites Lab"
-description: At the MAGIC (Materials science of Alloys, Glasses, Interfaces, and Composites) Lab, we develop novel characteriaiton and fabricaiton techniques for complex materials at multiple lengthscales.
+subtitle: "<b>M</b>aterials Science of <b>A</b>lloys, <b>G</b>lasses, <b>I</b>nterfaces, and <b>C</b>omposites Lab"
+description: At the MAGIC (Materials Science of Alloys, Glasses, Interfaces, and Composites) Lab, we develop novel characteriaiton and fabricaiton techniques for complex materials at multiple lengthscales.
 header: images/background.jpg
 footer: images/background.jpg
 proofer: false
