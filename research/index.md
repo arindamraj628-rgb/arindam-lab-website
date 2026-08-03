@@ -7,8 +7,7 @@ nav:
 
 # {% include icon.html icon="fa-solid fa-microscope" %}Publications
 
-Here are some representative publications. For a full list, visit my <Google Scholar page href="https://scholar.google.com/citations?user=3Fk2GOoAAAAJ&hl=en&authuser=1">.
-visit my <a href="https://scholar.google.com/citations?user=3Fk2GOoAAAAJ&hl=en&authuser=1" target="_blank">Google Scholar page</a>.
+Here are some representative publications. For a full list, visit my <a href="https://scholar.google.com/citations?user=3Fk2GOoAAAAJ&hl=en&authuser=1" target="_blank">Google Scholar page</a>.
 {% include section.html %}
 
 ## Highlighted
