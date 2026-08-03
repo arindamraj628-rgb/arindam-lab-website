@@ -1,14 +1,15 @@
 ---
-name: Jane Smith
+name: Arindam Raj
 image: images/photo.jpg
-role: principal-investigator
-affiliation: University of Colorado
+role: Principal Investigator
+affiliation: Northwestern University
 aliases:
-  - J. Smith
-  - J Smith
+  - A. Raj
+  - A Raj
+
 links:
-  home-page: https://janesmith.com
-  orcid: 0000-0001-8713-9213
+  home-page: https://arindamraj628-rgb.github.io/arindam-lab-website/
+  orcid: 0000-0001-7277-6770
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
