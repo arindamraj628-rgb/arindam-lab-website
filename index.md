@@ -10,12 +10,11 @@ Materials Science at Multiple Lengthscales!
 
 {% capture text %}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
+High-throughput technique, Local Deformation Mapping (LDM) developed to probe a general microstrcuture at nanoscale resolution over ~mm cross-section.
 {%
   include button.html
   link="research"
-  text="See our publications"
+  text="Check out our research themes"
   icon="fa-solid fa-arrow-right"
   flip=true
   style="bare"
