@@ -9,7 +9,6 @@ We develop robust characterization techniques for mechanical characterization of
 ## Highlights
 
 {% capture text %}
-
 High-throughput technique, Local Deformation Mapping (LDM) developed to probe a general microstrcuture at nanoscale resolution over ~mm cross-section.
 {%
   include button.html
@@ -31,8 +30,8 @@ High-throughput technique, Local Deformation Mapping (LDM) developed to probe a 
 %}
 
 {% capture text %}
+<p style="text-align: center;">Check out our research and review articles.</p>
 
-Check out our research and review articles.
 {%
   include button.html
   link="publications"
@@ -55,8 +54,7 @@ Check out our research and review articles.
 %}
 
 {% capture text %}
-
-Feel free to reach out for any queries, or collaborations!
+<p style="text-align: center;">Feel free to reach out for any queries, or collaborations!</p>
 {%
   include button.html
   link="contact"
