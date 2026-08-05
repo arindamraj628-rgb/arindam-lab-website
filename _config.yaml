@@ -1,7 +1,7 @@
 # site properties and page defaults
-title: MSC Lab
-subtitle: "<b>M</b>ultiscale <b>C</b>haracterization, and <b>S</b>ynthesis"
-description: At the MSC Lab, we develop novel characteriaiton and fabricaiton techniques for complex materials at multiple lengthscales.
+title: Raj Lab
+subtitle: "<b>A</b>dvanced <b>M</b>ultiscale <b>C</b>haracterization, and <b>S</b>ynthesis"
+description: We develop advanced characterizaiton and fabrication techniques for complex materials.
 header: images/background1.png
 footer: images/background1.png
 proofer: false
