@@ -154,23 +154,26 @@ header, .header, .hero {
 /* 2. Enforce pure white, larger title with shadow */
 header h1, .site-title {
   color: #ffffff !important;
-  font-size: 3rem !important;
+  font-size: 3.2rem !important;
   font-weight: 800 !important;
   text-shadow: 0 3px 10px rgba(0, 0, 0, 0.9) !important;
 }
 
-/* 3. Subtitle / Acronym line contrast */
+/* 3. Subtitle / Acronym line contrast & weight */
 header p, .subtitle {
   color: #ffffff !important;
+  opacity: 1 !important; /* Overrides template 0.65 opacity */
+  font-weight: 700 !important; /* Makes non-bold letters thick & bold */
   font-size: 1.75rem !important;
-  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.9) !important;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.95), 0 0 12px rgba(0, 0, 0, 0.8) !important;
 }
 
-/* 4. Make the <b> M-A-G-I-C </b> bold letters pop in bright cyan */
-header p b, header p strong, .subtitle b {
+/* 4. Highlighted Acronym Letters (M, C, S) */
+header p b, header p strong, .subtitle b, .subtitle strong {
   color: #38bdf8 !important; /* Bright cyan accent */
   font-size: 1.95rem !important;
-  font-weight: 800 !important;
+  font-weight: 900 !important; /* Extra bold for acronym emphasis */
+  text-shadow: 0 0 10px rgba(56, 189, 248, 0.6), 0 2px 6px rgba(0, 0, 0, 0.9) !important;
 }
 
 /* 5. Navigation links */
