@@ -32,12 +32,11 @@ High-throughput technique, Local Deformation Mapping (LDM) developed to probe a 
 
 {% capture text %}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
+Check out our research and review articles.
 {%
   include button.html
-  link="projects"
-  text="Browse our projects"
+  link="publications"
+  text="Browse our publications"
   icon="fa-solid fa-arrow-right"
   flip=true
   style="bare"
@@ -48,8 +47,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 {%
   include feature.html
   image="images/photo.jpg"
-  link="projects"
-  title="Our Projects"
+  link="publications"
+  title="Our Publications"
   flip=true
   style="bare"
   text=text
@@ -57,12 +56,11 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 {% capture text %}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
+Feel free to reach out for any queries, or collaborations!
 {%
   include button.html
-  link="team"
-  text="Meet our team"
+  link="contact"
+  text="Contact"
   icon="fa-solid fa-arrow-right"
   flip=true
   style="bare"
