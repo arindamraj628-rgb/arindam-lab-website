@@ -71,7 +71,7 @@ Feel free to reach out for any queries, or collaborations!
 {%
   include feature.html
   image="images/photo.jpg"
-  link="team"
-  title="Our Team"
+  link="contact"
+  title="Reach Out"
   text=text
 %}
