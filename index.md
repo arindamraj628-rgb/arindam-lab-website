@@ -1,9 +1,9 @@
 ---
 ---
 
-# Arindam Raj's Website
+# MATERIALS SCIENCE AT MULTIPLE LENGTH SCALES
 
-Materials Science at Multiple Lengthscales!
+We develop robust characterization techniques for mechanical characterization of microstrcutures across several length scales and leverage advanced fabrication strategies for fabrication of mechanically robust materials.   
 {% include section.html %}
 
 ## Highlights
