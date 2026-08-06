@@ -177,7 +177,7 @@ header, .header, .hero {
 /* 2. Enforce pure white, larger title with shadow */
 header h1, .site-title {
   color: #ffffff !important;
-  font-size: 3.2rem !important;
+  font-size: 4rem !important;
   font-weight: 800 !important;
   text-shadow: 0 3px 10px rgba(0, 0, 0, 0.9) !important;
 }
@@ -187,15 +187,15 @@ header p, .subtitle {
   color: #ffffff !important;
   opacity: 1 !important;             /* Overrides template 0.65 opacity */
   font-weight: 700 !important;        /* Makes non-bold letters thick & bold */
-  font-size: 1.75rem !important;
+  font-size: 1.5rem !important;
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.95),
               0 0 12px rgba(0, 0, 0, 0.8) !important;
 }
 
 /* 4. Highlighted Acronym Letters (M, C, S) */
 header p b, header p strong, .subtitle b, .subtitle strong {
-  color: #38bdf8 !important;          /* Bright cyan accent */
-  font-size: 1.95rem !important;
+  color: #ffffff !important;          /* Bright cyan accent */
+  font-size: 1.55rem !important;
   font-weight: 900 !important;        /* Extra bold for acronym emphasis */
   text-shadow: 0 0 10px rgba(56, 189, 248, 0.6),
               0 2px 6px rgba(0, 0, 0, 0.9) !important;
