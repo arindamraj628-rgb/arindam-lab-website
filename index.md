@@ -1,9 +1,9 @@
 ---
 ---
 
-# MATERIALS SCIENCE AT MULTIPLE LENGTH SCALES
+# Unlocking New Materials Property Spaces through Deterministic, Nanoscale Control for Bulk Alloys and Composites.
 
-We develop robust characterization techniques for mechanical characterization of microstrcutures across several length scales and leverage advanced fabrication strategies for fabrication of mechanically robust materials.   
+We develop robust characterization techniques for mechanical characterization of microstrcutures across several length scales, down to the nanoscale, and devise advanced fabrication strategies integrating nanoscale design for fabrication of mechanically robust materials.   
 {% include section.html %}
 
 ## Highlights
