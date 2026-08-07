@@ -1,7 +1,7 @@
 # site properties and page defaults
 title: Raj Lab
 subtitle: "<b>A</b>dvanced <b>M</b>ultiscale <b>C</b>haracterization, and <b>S</b>ynthesis"
-description: We develop advanced characterizaiton and fabrication techniques for complex materials.
+description: We develop advanced characterization and fabrication techniques for complex materials.
 header: images/background1.png
 footer: images/background1.png
 proofer: false
