@@ -68,7 +68,7 @@ High-throughput technique, Local Deformation Mapping (LDM) developed to probe a 
 
 {%
   include feature.html
-  image="images/photo.jpg"
+  image="contact/NU1_postdoc.jpg"
   link="contact"
   title="Reach Out"
   text=text
