@@ -19,7 +19,13 @@
         aria-label="{{ citation.title | default: "citation link" | regex_strip }}"
       >
         <img
-          src="{{ citation.image | relative_url | uri_escape }}"
+          {% if citation.image %}
+            src="{{ citation.image | relative_url | uri_escape }}"
+          {% else %}
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+            class="dynamic-citation-image"
+            data-doi="{{ citation.doi | default: citation.id }}"
+          {% endif %}
           alt="{{ citation.title | default: "citation image" | regex_strip }}"
           loading="lazy"
           {% include fallback.html %}
@@ -107,3 +113,41 @@
     </div>
   </div>
 </div>
+
+<!-- Dynamic Semantic Scholar Image Fetcher -->
+<script>
+  if (typeof window.semanticScholarFetcherLoaded === 'undefined') {
+    window.semanticScholarFetcherLoaded = true;
+    document.addEventListener("DOMContentLoaded", function() {
+      const images = document.querySelectorAll("img.dynamic-citation-image");
+      
+      images.forEach(img => {
+        const doi = img.getAttribute("data-doi");
+        
+        // Ensure the ID is a valid DOI before querying the API
+        if (doi && doi.startsWith("10.")) {
+          const url = `https://api.semanticscholar.org/graph/v1/paper/DOI:${doi}?fields=figures`;
+          
+          fetch(url)
+            .then(response => response.json())
+            .then(data => {
+              if (data && data.figures && data.figures.length > 0) {
+                // Apply the first figure URL returned by the database
+                img.src = data.figures[0].url;
+              } else {
+                // Hide the image container if no free figure exists
+                img.closest('.citation-image').style.display = 'none';
+              }
+            })
+            .catch(err => {
+              console.error("Error fetching figure for DOI:", doi, err);
+              img.closest('.citation-image').style.display = 'none';
+            });
+        } else {
+          // Hide container if no DOI is available to search with
+          img.closest('.citation-image').style.display = 'none';
+        }
+      });
+    });
+  }
+</script>
