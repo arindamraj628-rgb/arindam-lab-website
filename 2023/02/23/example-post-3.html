@@ -66,10 +66,10 @@
 
   <meta name="author" content="john-doe">
   <meta property="og:type" content="article">
-  <meta property="og:updated_time" content="2026-08-07T22:04:02+00:00">
+  <meta property="og:updated_time" content="2026-08-07T22:06:19+00:00">
   <meta property="article:published_time" content="2023-02-23T00:00:00+00:00">
-  <meta property="article:modified_time" content="2026-08-07T22:04:02+00:00">
-  <meta name="revised" content="2026-08-07T22:04:02+00:00">
+  <meta property="article:modified_time" content="2026-08-07T22:06:19+00:00">
+  <meta name="revised" content="2026-08-07T22:06:19+00:00">
 
 
 <script type="application/ld+json">
@@ -79,7 +79,7 @@
       "@type": "BlogPosting",
       "author": { "@type": "Person", "name": "Example post 3" },
       "datePublished": "2023-02-23T00:00:00+00:00",
-      "dateModified": "2026-08-07T22:04:02+00:00",
+      "dateModified": "2026-08-07T22:06:19+00:00",
     
     "name": "Example post 3",
     "description": "&lt;b&gt;A&lt;/b&gt;dvanced &lt;b&gt;M&lt;/b&gt;ultiscale &lt;b&gt;D&lt;/b&gt;esign, &lt;b&gt;F&lt;/b&gt;abrication, and &lt;b&gt;C&lt;/b&gt;haracterization. We develop advanced characterization and fabrication techniques for complex materials.",
@@ -383,7 +383,7 @@
       </g>
     </pattern>
 
-    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
       <fedropshadow dx="0" dy="5" stddeviation="6" flood-color="#000000" flood-opacity=".15"></fedropshadow>
     </filter>
 
@@ -392,22 +392,32 @@
   <style>
     .letter{
       transform-origin:110px 170px;
-      animation:stretch 5s cubic-bezier(.4,0,.2,1) infinite;
+      animation:stretch 4s cubic-bezier(.4,0,.2,1) infinite;
     }
 
     .rShape{
-      animation:rMorph 5s cubic-bezier(.4,0,.2,1) infinite;
+      animation:rMorph 4s cubic-bezier(.4,0,.2,1) infinite;
     }
 
+    /* Exaggerated vertical stretch and horizontal squash */
     @keyframes stretch{
-      0%,100%{ transform:scale(1,1); }
-      35%{ transform:scale(.98,1.05); }
-      70%{ transform:scale(.95,1.10); }
-      85%{ transform:scale(.98,1.03); }
+      0%, 100% {
+        transform: scale(1, 1);
+      }
+      25% {
+        transform: scale(1.15, 0.82); /* Flatten down before spring up */
+      }
+      60% {
+        transform: scale(0.78, 1.30); /* Exaggerated vertical stretch */
+      }
+      80% {
+        transform: scale(1.05, 0.95); /* Rebound bounce */
+      }
     }
 
+    /* Exaggerated path morphing */
     @keyframes rMorph{
-      0%,100%{
+      0%, 100%{
         d:path("
 M50 40
 L115 40
@@ -427,44 +437,66 @@ C148 128 135 138 112 138
 L90 138
 Z");
       }
-      35%{
+      25%{
+        /* Compressed path when flattened */
         d:path("
-M53 40
-L112 40
-C160 40 178 64 178 112
-C178 160 150 180 106 188
-L182 308
-L148 308
-L94 204
-L84 204
-L84 308
-L53 308
+M45 45
+L120 45
+C175 45 195 62 195 108
+C195 155 168 172 122 178
+L192 295
+L148 295
+L98 185
+L88 185
+L88 295
+L45 295
 Z
-M84 80
-L105 80
-C126 80 138 90 138 112
-C138 136 126 148 105 148
-L84 148
+M88 80
+L115 80
+C140 80 152 88 152 108
+C152 130 140 140 115 140
+L88 140
 Z");
       }
-      70%,85%{
+      60%{
+        /* Extended path when stretched high */
         d:path("
-M58 40
-L106 40
-C150 40 165 68 165 118
-C165 170 140 192 94 205
-L180 320
-L150 320
-L92 225
-L78 225
-L78 320
-L58 320
+M60 20
+L100 20
+C140 20 155 75 155 125
+C155 178 130 200 85 215
+L170 335
+L140 335
+L85 230
+L70 230
+L70 335
+L60 335
 Z
-M78 90
-L95 90
-C112 90 122 100 122 120
-C122 142 112 154 95 154
-L78 154
+M70 95
+L88 95
+C105 95 115 105 115 125
+C115 148 105 160 88 160
+L70 160
+Z");
+      }
+      80%{
+        d:path("
+M52 38
+L113 38
+C162 38 182 58 182 103
+C182 148 158 168 116 173
+L182 298
+L143 298
+L96 188
+L88 188
+L88 298
+L52 298
+Z
+M88 73
+L110 73
+C133 73 145 83 145 104
+C145 126 133 136 110 136
+L88 136
 Z");
       }
     }
