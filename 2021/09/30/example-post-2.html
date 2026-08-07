@@ -66,10 +66,10 @@
 
   <meta name="author" content="jane-smith">
   <meta property="og:type" content="article">
-  <meta property="og:updated_time" content="2026-08-07T22:01:08+00:00">
+  <meta property="og:updated_time" content="2026-08-07T22:03:37+00:00">
   <meta property="article:published_time" content="2021-09-30T00:00:00+00:00">
-  <meta property="article:modified_time" content="2026-08-07T22:01:08+00:00">
-  <meta name="revised" content="2026-08-07T22:01:08+00:00">
+  <meta property="article:modified_time" content="2026-08-07T22:03:37+00:00">
+  <meta name="revised" content="2026-08-07T22:03:37+00:00">
 
 
 <script type="application/ld+json">
@@ -79,7 +79,7 @@
       "@type": "BlogPosting",
       "author": { "@type": "Person", "name": "Example post 2" },
       "datePublished": "2021-09-30T00:00:00+00:00",
-      "dateModified": "2026-08-07T22:01:08+00:00",
+      "dateModified": "2026-08-07T22:03:37+00:00",
     
     "name": "Example post 2",
     "description": "&lt;b&gt;A&lt;/b&gt;dvanced &lt;b&gt;M&lt;/b&gt;ultiscale &lt;b&gt;D&lt;/b&gt;esign, &lt;b&gt;F&lt;/b&gt;abrication, and &lt;b&gt;C&lt;/b&gt;haracterization. We develop advanced characterization and fabrication techniques for complex materials.",
@@ -338,37 +338,160 @@
     
       <span class="logo">
         
-          <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 500 500" width="100%" height="100%">
-    <defs>
-        <!-- Custom pseudo-random polygonal grain pattern -->
-        <pattern id="color-grains" width="100" height="100" patternunits="userSpaceOnUse">
-            <!-- Grain 1 (Blue) -->
-            <polygon points="0,0 60,0 50,40 10,50 0,20" fill="#60a5fa" stroke="#1e293b" stroke-width="2" stroke-linejoin="round"></polygon>
-            <!-- Grain 2 (Red) -->
-            <polygon points="60,0 100,0 100,30 70,60 50,40" fill="#f87171" stroke="#1e293b" stroke-width="2" stroke-linejoin="round"></polygon>
-            <!-- Grain 3 (Green) -->
-            <polygon points="0,20 10,50 20,100 0,100" fill="#4ade80" stroke="#1e293b" stroke-width="2" stroke-linejoin="round"></polygon>
-            <!-- Grain 4 (Yellow) -->
-            <polygon points="10,50 50,40 70,60 80,100 20,100" fill="#facc15" stroke="#1e293b" stroke-width="2" stroke-linejoin="round"></polygon>
-            <!-- Grain 5 (Purple) -->
-            <polygon points="70,60 100,30 100,100 80,100" fill="#c084fc" stroke="#1e293b" stroke-width="2" stroke-linejoin="round"></polygon>
-        </pattern>
-    </defs>
+          <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 220 340" width="100%" height="100%">
+  <defs>
 
-    <!-- Clean Background -->
-    <rect width="500" height="500" fill="#f8fafc" rx="10"></rect>
+    <!-- Mosaic Pattern matching the provided image -->
+    <pattern id="mosaicPattern" width="220" height="340" patternunits="userSpaceOnUse">
+      
+      <g stroke="#020617" stroke-width="4" stroke-linejoin="round">
+        <!-- Row 1 -->
+        <polygon points="-5,-5 60,-5 55,45 -5,55" fill="#00bcd4"></polygon>
+        <polygon points="60,-5 110,-5 100,50 55,45" fill="#8b5cf6"></polygon>
+        <polygon points="110,-5 160,-5 150,55 100,50" fill="#f43f5e"></polygon>
+        <polygon points="160,-5 225,-5 225,65 150,55" fill="#10b981"></polygon>
 
-    <!-- Centered Origin for Symmetrical Stretching (Roughly X=250, Y=250) -->
-    <g transform="translate(250, 250)">
-        <g>
-            <!-- Affine transformation mapping: elongates Y (tension) and contracts X (Poisson's ratio) -->
-            <animatetransform attributename="transform" type="scale" values="1 1; 0.75 1.45; 1 1" dur="4s" repeatcount="indefinite"></animatetransform>
-            
-            <!-- Letter R Sample -->
-            <path fill-rule="evenodd" fill="url(#color-grains)" stroke="#0f172a" stroke-width="6" d="M 140 100 L 280 100 C 360 100, 360 250, 280 250 L 350 400 L 270 400 L 210 250 L 210 400 L 140 400 Z 
-                     M 210 150 L 210 200 L 260 200 C 290 200, 290 150, 260 150 Z" transform="translate(-250, -250)" stroke-linejoin="round"></path>
-        </g>
-    </g>
+        <!-- Row 2 -->
+        <polygon points="-5,55 55,45 60,115 -5,120" fill="#3b82f6"></polygon>
+        <polygon points="55,45 100,50 115,120 60,115" fill="#f59e0b"></polygon>
+        <polygon points="100,50 150,55 160,115 115,120" fill="#8b5cf6"></polygon>
+        <polygon points="150,55 225,65 225,125 160,115" fill="#3b82f6"></polygon>
+
+        <!-- Row 3 -->
+        <polygon points="-5,120 60,115 55,185 -5,180" fill="#f43f5e"></polygon>
+        <polygon points="60,115 115,120 125,175 55,185" fill="#00bcd4"></polygon>
+        <polygon points="115,120 160,115 170,185 125,175" fill="#f59e0b"></polygon>
+        <polygon points="160,115 225,125 225,195 170,185" fill="#3b82f6"></polygon>
+
+        <!-- Row 4 -->
+        <polygon points="-5,180 55,185 65,245 -5,240" fill="#10b981"></polygon>
+        <polygon points="55,185 125,175 140,235 65,245" fill="#f43f5e"></polygon>
+        <polygon points="125,175 170,185 190,250 140,235" fill="#00bcd4"></polygon>
+        <polygon points="170,185 225,195 225,255 190,250" fill="#8b5cf6"></polygon>
+
+        <!-- Row 5 -->
+        <polygon points="-5,240 65,245 55,315 -5,310" fill="#8b5cf6"></polygon>
+        <polygon points="65,245 140,235 130,320 55,315" fill="#3b82f6"></polygon>
+        <polygon points="140,235 190,250 200,315 130,320" fill="#10b981"></polygon>
+        <polygon points="190,250 225,255 225,325 200,315" fill="#f43f5e"></polygon>
+
+        <!-- Row 6 -->
+        <polygon points="-5,310 55,315 60,360 -5,360" fill="#00bcd4"></polygon>
+        <polygon points="55,315 130,320 120,360 60,360" fill="#f59e0b"></polygon>
+        <polygon points="130,320 200,315 210,360 120,360" fill="#8b5cf6"></polygon>
+        <polygon points="200,315 225,325 225,360 210,360" fill="#3b82f6"></polygon>
+      </g>
+    </pattern>
+
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <fedropshadow dx="0" dy="5" stddeviation="6" flood-color="#000000" flood-opacity=".15"></fedropshadow>
+    </filter>
+
+  </defs>
+
+  <style>
+    .letter{
+      transform-origin:110px 170px;
+      animation:stretch 5s cubic-bezier(.4,0,.2,1) infinite;
+    }
+
+    .rShape{
+      animation:rMorph 5s cubic-bezier(.4,0,.2,1) infinite;
+    }
+
+    @keyframes stretch{
+      0%,100%{ transform:scale(1,1); }
+      35%{ transform:scale(.98,1.05); }
+      70%{ transform:scale(.95,1.10); }
+      85%{ transform:scale(.98,1.03); }
+    }
+
+    @keyframes rMorph{
+      0%,100%{
+        d:path("
+M50 40
+L115 40
+C165 40 185 60 185 105
+C185 150 160 170 118 175
+L185 300
+L145 300
+L98 190
+L90 190
+L90 300
+L50 300
+Z
+M90 75
+L112 75
+C135 75 148 85 148 106
+C148 128 135 138 112 138
+L90 138
+Z");
+      }
+      35%{
+        d:path("
+M53 40
+L112 40
+C160 40 178 64 178 112
+C178 160 150 180 106 188
+L182 308
+L148 308
+L94 204
+L84 204
+L84 308
+L53 308
+Z
+M84 80
+L105 80
+C126 80 138 90 138 112
+C138 136 126 148 105 148
+L84 148
+Z");
+      }
+      70%,85%{
+        d:path("
+M58 40
+L106 40
+C150 40 165 68 165 118
+C165 170 140 192 94 205
+L180 320
+L150 320
+L92 225
+L78 225
+L78 320
+L58 320
+Z
+M78 90
+L95 90
+C112 90 122 100 122 120
+C122 142 112 154 95 154
+L78 154
+Z");
+      }
+    }
+  </style>
+
+  <g class="letter" filter="url(#glow)">
+    <path class="rShape" fill="url(#mosaicPattern)" fill-rule="evenodd" stroke="#020617" stroke-width="5" stroke-linejoin="round" d="
+M50 40
+L115 40
+C165 40 185 60 185 105
+C185 150 160 170 118 175
+L185 300
+L145 300
+L98 190
+L90 190
+L90 300
+L50 300
+Z
+
+M90 75
+L112 75
+C135 75 148 85 148 106
+C148 128 135 138 112 138
+L90 138
+Z"></path>
+  </g>
+
 </svg>
 
         
