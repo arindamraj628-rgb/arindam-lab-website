@@ -134,7 +134,12 @@ Z");
 
     <path
       class="rShape"
-      fill="url(#grainPattern)""
+      fill="url(#grainPattern)"
+      fill-rule="evenodd"
+      stroke="#020617"
+      stroke-width="3"
+      stroke-linejoin="round"
+      d="
 M50 40
 L115 40
 C165 40 185 60 185 105
@@ -152,4 +157,8 @@ L112 75
 C135 75 148 85 148 106
 C148 128 135 138 112 138
 L90 138
-Z"
+Z"/>
+
+  </g>
+
+</svg>
