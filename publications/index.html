@@ -557,6 +557,84 @@
 <div class="citation-container">
   <div class="citation">
     
+      <a href="https://doi.org/hcd3nh" class="citation-image" aria-label="Local deformation mapping reveals diffusion through microstructures">
+        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="dynamic-citation-image" data-doi="doi:10.1038/s41467-026-75351-8" alt="Local deformation mapping reveals diffusion through microstructures" loading="lazy" onerror="this.src = '/arindam-lab-website/images/fallback.svg'; this.onerror = null;">
+      </a>
+    
+
+    <div class="citation-text">
+      
+      
+
+      <a href="https://doi.org/hcd3nh" class="citation-title">
+        Local deformation mapping reveals diffusion through microstructures
+      </a>
+
+      <div class="citation-authors" tabindex="0">
+        Arindam Raj, Michael Aderibigbe, Ethen Thomas Lund, Yi-Xiang Yang, Sungwoo Sohn, Jan Schroers
+
+      </div>
+
+      <div class="citation-details">
+        <span class="citation-publisher">Nature Communications</span>
+         · 
+        <span class="citation-date">13 Jul 2026</span>
+         · 
+        <span class="citation-id">doi:10.1038/s41467-026-75351-8</span>
+      </div>
+
+      
+        
+
+        
+
+        
+      
+    </div>
+  </div>
+</div>
+
+<!-- Dynamic Semantic Scholar Image Fetcher -->
+<script>
+  if (typeof window.semanticScholarFetcherLoaded === 'undefined') {
+    window.semanticScholarFetcherLoaded = true;
+    document.addEventListener("DOMContentLoaded", function() {
+      const images = document.querySelectorAll("img.dynamic-citation-image");
+      
+      images.forEach(img => {
+        const doi = img.getAttribute("data-doi");
+        
+        // Ensure the ID is a valid DOI before querying the API
+        if (doi && doi.startsWith("10.")) {
+          const url = `https://api.semanticscholar.org/graph/v1/paper/DOI:${doi}?fields=figures`;
+          
+          fetch(url)
+            .then(response => response.json())
+            .then(data => {
+              if (data && data.figures && data.figures.length > 0) {
+                // Apply the first figure URL returned by the database
+                img.src = data.figures[0].url;
+              } else {
+                // Hide the image container if no free figure exists
+                img.closest('.citation-image').style.display = 'none';
+              }
+            })
+            .catch(err => {
+              console.error("Error fetching figure for DOI:", doi, err);
+              img.closest('.citation-image').style.display = 'none';
+            });
+        } else {
+          // Hide container if no DOI is available to search with
+          img.closest('.citation-image').style.display = 'none';
+        }
+      });
+    });
+  }
+</script>
+
+<div class="citation-container">
+  <div class="citation">
+    
       <a href="https://doi.org/hcdbs2" class="citation-image" aria-label="Direct determination of diffusion flux in alloys via spatial separation of flux">
         <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="dynamic-citation-image" data-doi="doi:10.1016/j.actamat.2024.120615" alt="Direct determination of diffusion flux in alloys via spatial separation of flux" loading="lazy" onerror="this.src = '/arindam-lab-website/images/fallback.svg'; this.onerror = null;">
       </a>
