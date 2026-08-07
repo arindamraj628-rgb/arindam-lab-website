@@ -12,6 +12,8 @@ Here are some representative publications. For a full list, visit my <a href="ht
 
 ## Highlighted
 
+{% include citation.html lookup="Local deformation mapping reveals diffusion through microstructures" style="rich" %}
+
 {% include citation.html lookup="Direct determination of diffusion flux in alloys via spatial separation of flux" style="rich" %}
 
 {% include section.html %}
