@@ -68,14 +68,23 @@ Feel free to reach out for any queries, discussions, or collaborations!
 {% include section.html dark=true %}
 
 {% capture col1 %}
+<p>
+  <a href="https://en.wikipedia.org/wiki/File:Northwestern_University_Aerial.jpg">"Northwestern University Aerial"</a> by Joshua Sukoff is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.
+</p>
 
 {% endcapture %}
 
 {% capture col2 %}
+<p>
+  <a href="https://jenikirbyhistory.getarchive.net/media/yale-university-landscape-universities-nature-landscapes-e3b4d0">"Yale University Landscape"</a> by [Author's Name] via Jeni Kirby History is marked with <a href="[Link to License]"> [License Name]</a>.
+</p>
 
 {% endcapture %}
 
 {% capture col3 %}
+<p>
+  <a href="https://en.wikipedia.org/wiki/File:Indian_Institute_of_Technology_Kanpur.jpg">"Night View of IIT Kanpur"</a> by NiteshSingh6789 via Wikimedia Commons is marked with <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.en">CC0 1.0</a>.
+</p>
 
 {% endcapture %}
 
