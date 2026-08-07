@@ -1,5 +1,20 @@
 # DO NOT EDIT, GENERATED AUTOMATICALLY
 
+- id: doi:10.1038/s41467-026-75351-8
+  title: Local deformation mapping reveals diffusion through microstructures
+  authors:
+  - Arindam Raj
+  - Michael Aderibigbe
+  - Ethen Thomas Lund
+  - Yi-Xiang Yang
+  - Sungwoo Sohn
+  - Jan Schroers
+  publisher: Nature Communications
+  date: '2026-07-13'
+  link: https://doi.org/hcd3nh
+  orcid: 0000-0001-7277-6770
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.1016/j.actamat.2024.120615
   title: Direct determination of diffusion flux in alloys via spatial separation of
     flux
@@ -142,17 +157,6 @@
   publisher: Biomedical Materials
   date: '2021-03-11'
   link: https://doi.org/gqsb3b
-  orcid: 0000-0001-7277-6770
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1088/1361-6552/ab9321
-  title: "Using M\xF6bius strip to describe non-integral spin of\n               \
-    \     electrons"
-  authors:
-  - Arindam Raj
-  publisher: Physics Education
-  date: '2020-06-18'
-  link: https://doi.org/hcdbs7
   orcid: 0000-0001-7277-6770
   plugin: orcid.py
   file: orcid.yaml
