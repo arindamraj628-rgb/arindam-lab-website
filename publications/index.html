@@ -558,7 +558,7 @@
   <div class="citation">
     
       <a href="https://doi.org/hcdbs2" class="citation-image" aria-label="Direct determination of diffusion flux in alloys via spatial separation of flux">
-        <img src="" alt="Direct determination of diffusion flux in alloys via spatial separation of flux" loading="lazy" onerror="this.src = '/arindam-lab-website/images/fallback.svg'; this.onerror = null;">
+        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="dynamic-citation-image" data-doi="doi:10.1016/j.actamat.2024.120615" alt="Direct determination of diffusion flux in alloys via spatial separation of flux" loading="lazy" onerror="this.src = '/arindam-lab-website/images/fallback.svg'; this.onerror = null;">
       </a>
     
 
@@ -593,6 +593,44 @@
     </div>
   </div>
 </div>
+
+<!-- Dynamic Semantic Scholar Image Fetcher -->
+<script>
+  if (typeof window.semanticScholarFetcherLoaded === 'undefined') {
+    window.semanticScholarFetcherLoaded = true;
+    document.addEventListener("DOMContentLoaded", function() {
+      const images = document.querySelectorAll("img.dynamic-citation-image");
+      
+      images.forEach(img => {
+        const doi = img.getAttribute("data-doi");
+        
+        // Ensure the ID is a valid DOI before querying the API
+        if (doi && doi.startsWith("10.")) {
+          const url = `https://api.semanticscholar.org/graph/v1/paper/DOI:${doi}?fields=figures`;
+          
+          fetch(url)
+            .then(response => response.json())
+            .then(data => {
+              if (data && data.figures && data.figures.length > 0) {
+                // Apply the first figure URL returned by the database
+                img.src = data.figures[0].url;
+              } else {
+                // Hide the image container if no free figure exists
+                img.closest('.citation-image').style.display = 'none';
+              }
+            })
+            .catch(err => {
+              console.error("Error fetching figure for DOI:", doi, err);
+              img.closest('.citation-image').style.display = 'none';
+            });
+        } else {
+          // Hide container if no DOI is available to search with
+          img.closest('.citation-image').style.display = 'none';
+        }
+      });
+    });
+  }
+</script>
   </section>
 
   
@@ -623,7 +661,7 @@
   <div class="citation">
     
       <a href="https://doi.org/hcdbs2" class="citation-image" aria-label="Direct determination of diffusion flux in alloys via spatial separation of flux">
-        <img src="" alt="Direct determination of diffusion flux in alloys via spatial separation of flux" loading="lazy" onerror="this.src = '/arindam-lab-website/images/fallback.svg'; this.onerror = null;">
+        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="dynamic-citation-image" data-doi="doi:10.1016/j.actamat.2024.120615" alt="Direct determination of diffusion flux in alloys via spatial separation of flux" loading="lazy" onerror="this.src = '/arindam-lab-website/images/fallback.svg'; this.onerror = null;">
       </a>
     
 
@@ -659,13 +697,51 @@
   </div>
 </div>
 
+<!-- Dynamic Semantic Scholar Image Fetcher -->
+<script>
+  if (typeof window.semanticScholarFetcherLoaded === 'undefined') {
+    window.semanticScholarFetcherLoaded = true;
+    document.addEventListener("DOMContentLoaded", function() {
+      const images = document.querySelectorAll("img.dynamic-citation-image");
+      
+      images.forEach(img => {
+        const doi = img.getAttribute("data-doi");
+        
+        // Ensure the ID is a valid DOI before querying the API
+        if (doi && doi.startsWith("10.")) {
+          const url = `https://api.semanticscholar.org/graph/v1/paper/DOI:${doi}?fields=figures`;
+          
+          fetch(url)
+            .then(response => response.json())
+            .then(data => {
+              if (data && data.figures && data.figures.length > 0) {
+                // Apply the first figure URL returned by the database
+                img.src = data.figures[0].url;
+              } else {
+                // Hide the image container if no free figure exists
+                img.closest('.citation-image').style.display = 'none';
+              }
+            })
+            .catch(err => {
+              console.error("Error fetching figure for DOI:", doi, err);
+              img.closest('.citation-image').style.display = 'none';
+            });
+        } else {
+          // Hide container if no DOI is available to search with
+          img.closest('.citation-image').style.display = 'none';
+        }
+      });
+    });
+  }
+</script>
+
 <h3 id="2024">2024</h3>
 
 <div class="citation-container">
   <div class="citation">
     
       <a href="https://doi.org/hcdbs3" class="citation-image" aria-label="Strengthening of Zr-based metallic glass at low dose helium ion irradiation">
-        <img src="" alt="Strengthening of Zr-based metallic glass at low dose helium ion irradiation" loading="lazy" onerror="this.src = '/arindam-lab-website/images/fallback.svg'; this.onerror = null;">
+        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="dynamic-citation-image" data-doi="doi:10.1016/j.jnucmat.2024.154943" alt="Strengthening of Zr-based metallic glass at low dose helium ion irradiation" loading="lazy" onerror="this.src = '/arindam-lab-website/images/fallback.svg'; this.onerror = null;">
       </a>
     
 
@@ -701,13 +777,51 @@
   </div>
 </div>
 
+<!-- Dynamic Semantic Scholar Image Fetcher -->
+<script>
+  if (typeof window.semanticScholarFetcherLoaded === 'undefined') {
+    window.semanticScholarFetcherLoaded = true;
+    document.addEventListener("DOMContentLoaded", function() {
+      const images = document.querySelectorAll("img.dynamic-citation-image");
+      
+      images.forEach(img => {
+        const doi = img.getAttribute("data-doi");
+        
+        // Ensure the ID is a valid DOI before querying the API
+        if (doi && doi.startsWith("10.")) {
+          const url = `https://api.semanticscholar.org/graph/v1/paper/DOI:${doi}?fields=figures`;
+          
+          fetch(url)
+            .then(response => response.json())
+            .then(data => {
+              if (data && data.figures && data.figures.length > 0) {
+                // Apply the first figure URL returned by the database
+                img.src = data.figures[0].url;
+              } else {
+                // Hide the image container if no free figure exists
+                img.closest('.citation-image').style.display = 'none';
+              }
+            })
+            .catch(err => {
+              console.error("Error fetching figure for DOI:", doi, err);
+              img.closest('.citation-image').style.display = 'none';
+            });
+        } else {
+          // Hide container if no DOI is available to search with
+          img.closest('.citation-image').style.display = 'none';
+        }
+      });
+    });
+  }
+</script>
+
 <h3 id="2023">2023</h3>
 
 <div class="citation-container">
   <div class="citation">
     
       <a href="https://doi.org/hcdbs4" class="citation-image" aria-label="Size-dependent deformation behavior in nanosized amorphous metals suggesting transition from collective to individual atomic transport">
-        <img src="" alt="Size-dependent deformation behavior in nanosized amorphous metals suggesting transition from collective to individual atomic transport" loading="lazy" onerror="this.src = '/arindam-lab-website/images/fallback.svg'; this.onerror = null;">
+        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="dynamic-citation-image" data-doi="doi:10.1038/s41467-023-41582-2" alt="Size-dependent deformation behavior in nanosized amorphous metals suggesting transition from collective to individual atomic transport" loading="lazy" onerror="this.src = '/arindam-lab-website/images/fallback.svg'; this.onerror = null;">
       </a>
     
 
@@ -743,11 +857,49 @@
   </div>
 </div>
 
+<!-- Dynamic Semantic Scholar Image Fetcher -->
+<script>
+  if (typeof window.semanticScholarFetcherLoaded === 'undefined') {
+    window.semanticScholarFetcherLoaded = true;
+    document.addEventListener("DOMContentLoaded", function() {
+      const images = document.querySelectorAll("img.dynamic-citation-image");
+      
+      images.forEach(img => {
+        const doi = img.getAttribute("data-doi");
+        
+        // Ensure the ID is a valid DOI before querying the API
+        if (doi && doi.startsWith("10.")) {
+          const url = `https://api.semanticscholar.org/graph/v1/paper/DOI:${doi}?fields=figures`;
+          
+          fetch(url)
+            .then(response => response.json())
+            .then(data => {
+              if (data && data.figures && data.figures.length > 0) {
+                // Apply the first figure URL returned by the database
+                img.src = data.figures[0].url;
+              } else {
+                // Hide the image container if no free figure exists
+                img.closest('.citation-image').style.display = 'none';
+              }
+            })
+            .catch(err => {
+              console.error("Error fetching figure for DOI:", doi, err);
+              img.closest('.citation-image').style.display = 'none';
+            });
+        } else {
+          // Hide container if no DOI is available to search with
+          img.closest('.citation-image').style.display = 'none';
+        }
+      });
+    });
+  }
+</script>
+
 <div class="citation-container">
   <div class="citation">
     
       <a href="https://doi.org/grnrrm" class="citation-image" aria-label="Machine learning versus human learning in predicting glass-forming ability of metallic glasses">
-        <img src="" alt="Machine learning versus human learning in predicting glass-forming ability of metallic glasses" loading="lazy" onerror="this.src = '/arindam-lab-website/images/fallback.svg'; this.onerror = null;">
+        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="dynamic-citation-image" data-doi="doi:10.1016/j.actamat.2022.118497" alt="Machine learning versus human learning in predicting glass-forming ability of metallic glasses" loading="lazy" onerror="this.src = '/arindam-lab-website/images/fallback.svg'; this.onerror = null;">
       </a>
     
 
@@ -783,13 +935,51 @@
   </div>
 </div>
 
+<!-- Dynamic Semantic Scholar Image Fetcher -->
+<script>
+  if (typeof window.semanticScholarFetcherLoaded === 'undefined') {
+    window.semanticScholarFetcherLoaded = true;
+    document.addEventListener("DOMContentLoaded", function() {
+      const images = document.querySelectorAll("img.dynamic-citation-image");
+      
+      images.forEach(img => {
+        const doi = img.getAttribute("data-doi");
+        
+        // Ensure the ID is a valid DOI before querying the API
+        if (doi && doi.startsWith("10.")) {
+          const url = `https://api.semanticscholar.org/graph/v1/paper/DOI:${doi}?fields=figures`;
+          
+          fetch(url)
+            .then(response => response.json())
+            .then(data => {
+              if (data && data.figures && data.figures.length > 0) {
+                // Apply the first figure URL returned by the database
+                img.src = data.figures[0].url;
+              } else {
+                // Hide the image container if no free figure exists
+                img.closest('.citation-image').style.display = 'none';
+              }
+            })
+            .catch(err => {
+              console.error("Error fetching figure for DOI:", doi, err);
+              img.closest('.citation-image').style.display = 'none';
+            });
+        } else {
+          // Hide container if no DOI is available to search with
+          img.closest('.citation-image').style.display = 'none';
+        }
+      });
+    });
+  }
+</script>
+
 <h3 id="2021">2021</h3>
 
 <div class="citation-container">
   <div class="citation">
     
       <a href="https://doi.org/hcdbs5" class="citation-image" aria-label="Single-Crystal Nanostructure Arrays Forming Epitaxially through Thermomechanical Nanomolding">
-        <img src="" alt="Single-Crystal Nanostructure Arrays Forming Epitaxially through Thermomechanical Nanomolding" loading="lazy" onerror="this.src = '/arindam-lab-website/images/fallback.svg'; this.onerror = null;">
+        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="dynamic-citation-image" data-doi="doi:10.1021/acs.nanolett.1c03744" alt="Single-Crystal Nanostructure Arrays Forming Epitaxially through Thermomechanical Nanomolding" loading="lazy" onerror="this.src = '/arindam-lab-website/images/fallback.svg'; this.onerror = null;">
       </a>
     
 
@@ -825,11 +1015,49 @@
   </div>
 </div>
 
+<!-- Dynamic Semantic Scholar Image Fetcher -->
+<script>
+  if (typeof window.semanticScholarFetcherLoaded === 'undefined') {
+    window.semanticScholarFetcherLoaded = true;
+    document.addEventListener("DOMContentLoaded", function() {
+      const images = document.querySelectorAll("img.dynamic-citation-image");
+      
+      images.forEach(img => {
+        const doi = img.getAttribute("data-doi");
+        
+        // Ensure the ID is a valid DOI before querying the API
+        if (doi && doi.startsWith("10.")) {
+          const url = `https://api.semanticscholar.org/graph/v1/paper/DOI:${doi}?fields=figures`;
+          
+          fetch(url)
+            .then(response => response.json())
+            .then(data => {
+              if (data && data.figures && data.figures.length > 0) {
+                // Apply the first figure URL returned by the database
+                img.src = data.figures[0].url;
+              } else {
+                // Hide the image container if no free figure exists
+                img.closest('.citation-image').style.display = 'none';
+              }
+            })
+            .catch(err => {
+              console.error("Error fetching figure for DOI:", doi, err);
+              img.closest('.citation-image').style.display = 'none';
+            });
+        } else {
+          // Hide container if no DOI is available to search with
+          img.closest('.citation-image').style.display = 'none';
+        }
+      });
+    });
+  }
+</script>
+
 <div class="citation-container">
   <div class="citation">
     
       <a href="https://doi.org/g9mhpm" class="citation-image" aria-label="Unleashing nanofabrication through thermomechanical nanomolding">
-        <img src="" alt="Unleashing nanofabrication through thermomechanical nanomolding" loading="lazy" onerror="this.src = '/arindam-lab-website/images/fallback.svg'; this.onerror = null;">
+        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="dynamic-citation-image" data-doi="doi:10.1126/sciadv.abi4567" alt="Unleashing nanofabrication through thermomechanical nanomolding" loading="lazy" onerror="this.src = '/arindam-lab-website/images/fallback.svg'; this.onerror = null;">
       </a>
     
 
@@ -865,11 +1093,49 @@
   </div>
 </div>
 
+<!-- Dynamic Semantic Scholar Image Fetcher -->
+<script>
+  if (typeof window.semanticScholarFetcherLoaded === 'undefined') {
+    window.semanticScholarFetcherLoaded = true;
+    document.addEventListener("DOMContentLoaded", function() {
+      const images = document.querySelectorAll("img.dynamic-citation-image");
+      
+      images.forEach(img => {
+        const doi = img.getAttribute("data-doi");
+        
+        // Ensure the ID is a valid DOI before querying the API
+        if (doi && doi.startsWith("10.")) {
+          const url = `https://api.semanticscholar.org/graph/v1/paper/DOI:${doi}?fields=figures`;
+          
+          fetch(url)
+            .then(response => response.json())
+            .then(data => {
+              if (data && data.figures && data.figures.length > 0) {
+                // Apply the first figure URL returned by the database
+                img.src = data.figures[0].url;
+              } else {
+                // Hide the image container if no free figure exists
+                img.closest('.citation-image').style.display = 'none';
+              }
+            })
+            .catch(err => {
+              console.error("Error fetching figure for DOI:", doi, err);
+              img.closest('.citation-image').style.display = 'none';
+            });
+        } else {
+          // Hide container if no DOI is available to search with
+          img.closest('.citation-image').style.display = 'none';
+        }
+      });
+    });
+  }
+</script>
+
 <div class="citation-container">
   <div class="citation">
     
       <a href="https://doi.org/hcdbs6" class="citation-image" aria-label="Nanomolding of Gold and Gold Silicon Heterostructures at Room Temperature">
-        <img src="" alt="Nanomolding of Gold and Gold Silicon Heterostructures at Room Temperature" loading="lazy" onerror="this.src = '/arindam-lab-website/images/fallback.svg'; this.onerror = null;">
+        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="dynamic-citation-image" data-doi="doi:10.1021/acsnano.1c02636" alt="Nanomolding of Gold and Gold Silicon Heterostructures at Room Temperature" loading="lazy" onerror="this.src = '/arindam-lab-website/images/fallback.svg'; this.onerror = null;">
       </a>
     
 
@@ -905,11 +1171,49 @@
   </div>
 </div>
 
+<!-- Dynamic Semantic Scholar Image Fetcher -->
+<script>
+  if (typeof window.semanticScholarFetcherLoaded === 'undefined') {
+    window.semanticScholarFetcherLoaded = true;
+    document.addEventListener("DOMContentLoaded", function() {
+      const images = document.querySelectorAll("img.dynamic-citation-image");
+      
+      images.forEach(img => {
+        const doi = img.getAttribute("data-doi");
+        
+        // Ensure the ID is a valid DOI before querying the API
+        if (doi && doi.startsWith("10.")) {
+          const url = `https://api.semanticscholar.org/graph/v1/paper/DOI:${doi}?fields=figures`;
+          
+          fetch(url)
+            .then(response => response.json())
+            .then(data => {
+              if (data && data.figures && data.figures.length > 0) {
+                // Apply the first figure URL returned by the database
+                img.src = data.figures[0].url;
+              } else {
+                // Hide the image container if no free figure exists
+                img.closest('.citation-image').style.display = 'none';
+              }
+            })
+            .catch(err => {
+              console.error("Error fetching figure for DOI:", doi, err);
+              img.closest('.citation-image').style.display = 'none';
+            });
+        } else {
+          // Hide container if no DOI is available to search with
+          img.closest('.citation-image').style.display = 'none';
+        }
+      });
+    });
+  }
+</script>
+
 <div class="citation-container">
   <div class="citation">
     
       <a href="https://doi.org/gqsb3b" class="citation-image" aria-label="Biocompatibility of nanomaterials and their immunological properties">
-        <img src="" alt="Biocompatibility of nanomaterials and their immunological properties" loading="lazy" onerror="this.src = '/arindam-lab-website/images/fallback.svg'; this.onerror = null;">
+        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="dynamic-citation-image" data-doi="doi:10.1088/1748-605X/abe5fa" alt="Biocompatibility of nanomaterials and their immunological properties" loading="lazy" onerror="this.src = '/arindam-lab-website/images/fallback.svg'; this.onerror = null;">
       </a>
     
 
@@ -945,13 +1249,51 @@
   </div>
 </div>
 
+<!-- Dynamic Semantic Scholar Image Fetcher -->
+<script>
+  if (typeof window.semanticScholarFetcherLoaded === 'undefined') {
+    window.semanticScholarFetcherLoaded = true;
+    document.addEventListener("DOMContentLoaded", function() {
+      const images = document.querySelectorAll("img.dynamic-citation-image");
+      
+      images.forEach(img => {
+        const doi = img.getAttribute("data-doi");
+        
+        // Ensure the ID is a valid DOI before querying the API
+        if (doi && doi.startsWith("10.")) {
+          const url = `https://api.semanticscholar.org/graph/v1/paper/DOI:${doi}?fields=figures`;
+          
+          fetch(url)
+            .then(response => response.json())
+            .then(data => {
+              if (data && data.figures && data.figures.length > 0) {
+                // Apply the first figure URL returned by the database
+                img.src = data.figures[0].url;
+              } else {
+                // Hide the image container if no free figure exists
+                img.closest('.citation-image').style.display = 'none';
+              }
+            })
+            .catch(err => {
+              console.error("Error fetching figure for DOI:", doi, err);
+              img.closest('.citation-image').style.display = 'none';
+            });
+        } else {
+          // Hide container if no DOI is available to search with
+          img.closest('.citation-image').style.display = 'none';
+        }
+      });
+    });
+  }
+</script>
+
 <h3 id="2020">2020</h3>
 
 <div class="citation-container">
   <div class="citation">
     
       <a href="https://doi.org/hcdbs7" class="citation-image" aria-label="Using Möbius strip to describe non-integral spin of electrons">
-        <img src="" alt="Using Möbius strip to describe non-integral spin of electrons" loading="lazy" onerror="this.src = '/arindam-lab-website/images/fallback.svg'; this.onerror = null;">
+        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="dynamic-citation-image" data-doi="doi:10.1088/1361-6552/ab9321" alt="Using Möbius strip to describe non-integral spin of electrons" loading="lazy" onerror="this.src = '/arindam-lab-website/images/fallback.svg'; this.onerror = null;">
       </a>
     
 
@@ -987,6 +1329,44 @@
     </div>
   </div>
 </div>
+
+<!-- Dynamic Semantic Scholar Image Fetcher -->
+<script>
+  if (typeof window.semanticScholarFetcherLoaded === 'undefined') {
+    window.semanticScholarFetcherLoaded = true;
+    document.addEventListener("DOMContentLoaded", function() {
+      const images = document.querySelectorAll("img.dynamic-citation-image");
+      
+      images.forEach(img => {
+        const doi = img.getAttribute("data-doi");
+        
+        // Ensure the ID is a valid DOI before querying the API
+        if (doi && doi.startsWith("10.")) {
+          const url = `https://api.semanticscholar.org/graph/v1/paper/DOI:${doi}?fields=figures`;
+          
+          fetch(url)
+            .then(response => response.json())
+            .then(data => {
+              if (data && data.figures && data.figures.length > 0) {
+                // Apply the first figure URL returned by the database
+                img.src = data.figures[0].url;
+              } else {
+                // Hide the image container if no free figure exists
+                img.closest('.citation-image').style.display = 'none';
+              }
+            })
+            .catch(err => {
+              console.error("Error fetching figure for DOI:", doi, err);
+              img.closest('.citation-image').style.display = 'none';
+            });
+        } else {
+          // Hide container if no DOI is available to search with
+          img.closest('.citation-image').style.display = 'none';
+        }
+      });
+    });
+  }
+</script>
   </section>
 
 
