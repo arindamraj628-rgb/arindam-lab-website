@@ -66,10 +66,10 @@
 
   <meta name="author" content="john-doe">
   <meta property="og:type" content="article">
-  <meta property="og:updated_time" content="2026-08-08T23:54:54+00:00">
+  <meta property="og:updated_time" content="2026-08-08T23:57:54+00:00">
   <meta property="article:published_time" content="2023-02-23T00:00:00+00:00">
-  <meta property="article:modified_time" content="2026-08-08T23:54:54+00:00">
-  <meta name="revised" content="2026-08-08T23:54:54+00:00">
+  <meta property="article:modified_time" content="2026-08-08T23:57:54+00:00">
+  <meta name="revised" content="2026-08-08T23:57:54+00:00">
 
 
 <script type="application/ld+json">
@@ -79,7 +79,7 @@
       "@type": "BlogPosting",
       "author": { "@type": "Person", "name": "Example post 3" },
       "datePublished": "2023-02-23T00:00:00+00:00",
-      "dateModified": "2026-08-08T23:54:54+00:00",
+      "dateModified": "2026-08-08T23:57:54+00:00",
     
     "name": "Example post 3",
     "description": "Advanced Multiscale Design, Fabrication, and Characterization. We develop advanced characterization and fabrication techniques for complex materials.",
@@ -392,30 +392,38 @@
   <style>
     .letter{
       transform-origin:110px 170px;
-      animation:stretch 4s cubic-bezier(0.37, 0, 0.63, 1) infinite;
+      animation:stretch 4s infinite;
     }
 
     .rShape{
-      animation:rMorph 4s cubic-bezier(0.37, 0, 0.63, 1) infinite;
+      animation:rMorph 4s infinite;
     }
 
-    /* Loop: Vertical scale increased to 1.133, Horizontal scale reduced to 1.395 */
+    /* Keyframe-specific easing curves for maximum fluidity */
     @keyframes stretch{
-      0%, 50%, 100% {
+      0% {
         transform: scale(1, 1);
+        animation-timing-function: cubic-bezier(0.37, 0, 0.63, 1);
       }
       25% {
-        transform: scale(0.85, 1.133); /* +10% vertical stretch */
+        transform: scale(0.85, 1.133);
+        animation-timing-function: cubic-bezier(0.37, 0, 0.63, 1);
+      }
+      50% {
+        transform: scale(1, 1);
+        animation-timing-function: cubic-bezier(0.37, 0, 0.63, 1);
       }
       75% {
-        transform: scale(1.395, 0.82); /* -10% horizontal stretch */
+        transform: scale(1.395, 0.82);
+        animation-timing-function: cubic-bezier(0.37, 0, 0.63, 1);
+      }
+      100% {
+        transform: scale(1, 1);
       }
     }
 
-    /* Path morphing aligned with timing */
     @keyframes rMorph{
-      0%, 50%, 100%{
-        /* Normal State */
+      0% {
         d:path("
 M50 40
 L115 40
@@ -434,9 +442,9 @@ C135 75 148 85 148 106
 C148 128 135 138 112 138
 L90 138
 Z");
+        animation-timing-function: cubic-bezier(0.37, 0, 0.63, 1);
       }
-      25%{
-        /* Vertical Stretch Path */
+      25% {
         d:path("
 M58 25
 L102 25
@@ -455,9 +463,30 @@ C108 90 118 100 118 120
 C118 142 108 155 90 155
 L72 155
 Z");
+        animation-timing-function: cubic-bezier(0.37, 0, 0.63, 1);
       }
-      75%{
-        /* Horizontal Stretch Path */
+      50% {
+        d:path("
+M50 40
+L115 40
+C165 40 185 60 185 105
+C185 150 160 170 118 175
+L185 300
+L145 300
+L98 190
+L90 190
+L90 300
+L50 300
+Z
+M90 75
+L112 75
+C135 75 148 85 148 106
+C148 128 135 138 112 138
+L90 138
+Z");
+        animation-timing-function: cubic-bezier(0.37, 0, 0.63, 1);
+      }
+      75% {
         d:path("
 M37 46
 L129 46
@@ -475,6 +504,27 @@ L120 81
 C145 81 158 89 158 109
 C158 131 145 141 120 141
 L83 141
+Z");
+        animation-timing-function: cubic-bezier(0.37, 0, 0.63, 1);
+      }
+      100% {
+        d:path("
+M50 40
+L115 40
+C165 40 185 60 185 105
+C185 150 160 170 118 175
+L185 300
+L145 300
+L98 190
+L90 190
+L90 300
+L50 300
+Z
+M90 75
+L112 75
+C135 75 148 85 148 106
+C148 128 135 138 112 138
+L90 138
 Z");
       }
     }
