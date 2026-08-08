@@ -151,37 +151,41 @@ header, .header, .hero {
   background-position: center !important;
 }
 
-/* 2. Enforce pure white, larger title with shadow */
-header h1, .site-title {
+/* 2. Title ("RAJ LAB") - Prominent, boldest, and largest */
+.title, header h1, .site-title {
   color: #ffffff !important;
-  font-size: 5rem !important;
-  font-weight: 900 !important;
-  text-shadow: 0 3px 10px rgba(0, 0, 0, 0.9) !important;
+  font-size: 3.5rem !important; /* Dramatically larger than subtitle */
+  font-weight: 900 !important; /* Maximum bold weight */
+  letter-spacing: 2px !important;
+  text-shadow: 0 3px 12px rgba(0, 0, 0, 0.9) !important;
+  margin-bottom: 0.5rem !important;
 }
 
-/* 3. Subtitle / Acronym line contrast & weight */
-header p, .subtitle {
+/* 3. Subtitle ("Advanced Multiscale...") - Secondary size & bold */
+.subtitle, header p {
   color: #ffffff !important;
   opacity: 1 !important; /* Overrides template 0.65 opacity */
-  font-weight: 900 !important; /* Makes non-bold letters thick & bold */
-  font-size: 1.5rem !important;
+  font-size: 1.35rem !important; /* Scaled down below title size */
+  font-weight: 700 !important; /* Bold, but hierarchical relative to title */
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.95), 0 0 12px rgba(0, 0, 0, 0.8) !important;
+  margin-bottom: 1.5rem !important; /* Creates clean breathing room above nav */
 }
 
-/* 4. Highlighted Acronym Letters (M, C, S) */
+/* 4. Highlighted Acronym Letters (if using <b> or <strong> tags inside subtitle) */
 header p b, header p strong, .subtitle b, .subtitle strong {
-  color: #ffffff !important; /* Bright cyan accent */
-  font-size: 1.55rem !important;
-  font-weight: 900 !important; /* Extra bold for acronym emphasis */
+  color: #38bdf8 !important; /* Bright cyan accent */
+  font-size: 1.4rem !important; /* Matches proportional scale */
+  font-weight: 900 !important; /* Extra weight for acronym emphasis */
   text-shadow: 0 0 10px rgba(56, 189, 248, 0.6), 0 2px 6px rgba(0, 0, 0, 0.9) !important;
 }
 
-/* 5. Navigation links */
-header nav a, .nav-link {
+/* 5. Navigation links - Retained original size & style */
+header nav a, nav > a, .nav-link {
   color: #ffffff !important;
+  font-size: 1rem !important; /* Maintained target nav size */
   font-weight: 600 !important;
   text-shadow: 0 2px 6px rgba(0, 0, 0, 0.8) !important;
-  letter-spacing: 1px;
+  letter-spacing: 1.5px !important;
 }
 
 /* 1. Keep outer header stretched full-width */
