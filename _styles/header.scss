@@ -241,3 +241,85 @@ header > .inner {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5) !important;
 }
 
+
+
+/* ===================================================
+   1. YOUR EXISTING CSS / SCSS CODE ABOVE
+   =================================================== */
+
+header[data-big] {
+  /* ... your existing big header styles ... */
+}
+
+/* 2. Title ("RAJ LAB") */
+.title, header h1, .site-title { ... }
+
+/* 3. Subtitle */
+.subtitle, header p { ... }
+
+/* 5. Navigation links */
+header nav a, .nav-link { ... }
+
+
+/* ===================================================
+   2. PASTE THE NEW FIX HERE (AT THE VERY BOTTOM)
+   =================================================== */
+
+/* Standard / Compact Header Layout Alignment */
+header:not([data-big]) {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  padding: 12px 24px !important;
+
+  .home {
+    display: flex !important;
+    align-items: center !important;
+    gap: 12px !important;
+  }
+
+  .logo {
+    display: flex !important;
+    align-items: center !important;
+    height: 38px !important;
+
+    > * {
+      height: 100% !important;
+      width: auto !important;
+      display: block !important;
+    }
+  }
+
+  .title-text {
+    display: flex !important;
+    align-items: baseline !important;
+    gap: 10px !important;
+    margin: 0 !important;
+  }
+
+  .title, h1 {
+    font-size: 1.6rem !important;
+    font-weight: 800 !important;
+    line-height: 1 !important;
+    margin: 0 !important;
+  }
+
+  .subtitle, p {
+    font-size: 1.05rem !important;
+    font-weight: 600 !important;
+    line-height: 1 !important;
+    margin: 0 !important;
+  }
+
+  nav {
+    display: flex !important;
+    align-items: center !important;
+    gap: 16px !important;
+    margin: 0 !important;
+
+    a {
+      line-height: 1 !important;
+      padding: 4px 0 !important;
+    }
+  }
+}
