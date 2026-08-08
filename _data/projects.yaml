@@ -1,12 +1,14 @@
-- title: Cool Dataset
-  subtitle: a subtitle
+- title: High-Throughput Local Diffusion Mapping
+  subtitle: Multiscale diffusion measurement with nanoscale resolution
   group: featured
-  image: images/photo.jpg
-  link: https://github.com/
-  description: Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  image: images/EBSD_LDM.png
+  link: https://www.nature.com/articles/s41467-026-75351-8
+  description:  Introducing a high-resolution, high-throughput characterization technique. LDM determines what diffuses locally through microstructures, experimentally realized by pressing a nanomold onto a microstructure, forming a nanorod array
   repo: greenelab/lab-website-template
   tags:
-    - resource
+    - diffusion
+    - multiscale characterization
+    - eutectic 
 
 - title: Cool Package
   subtitle: a subtitle
