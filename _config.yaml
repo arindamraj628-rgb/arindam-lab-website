@@ -1,7 +1,7 @@
 # site properties and page defaults
-title: Raj Lab: Advanced Multiscale Design, Fabrication, and Characterization
+title: "Raj Lab: Advanced Multiscale Design, Fabrication, and Characterization"
 subtitle: ""
-description: We develop advanced characterization and fabrication techniques for complex materials.
+description: "We develop advanced characterization and fabrication techniques for complex materials."
 header: images/background1.png
 footer: images/background1.png
 proofer: false
