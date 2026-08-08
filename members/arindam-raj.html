@@ -333,7 +333,7 @@
           <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 220 340" width="100%" height="100%">
   <defs>
 
-    <!-- Mosaic Pattern matching the provided image -->
+    <!-- Mosaic Pattern -->
     <pattern id="mosaicPattern" width="220" height="340" patternunits="userSpaceOnUse">
       
       <g stroke="#020617" stroke-width="4" stroke-linejoin="round">
@@ -384,35 +384,30 @@
   <style>
     .letter{
       transform-origin:110px 170px;
-      animation:stretch 4s cubic-bezier(.4,0,.2,1) infinite;
+      animation:stretch 4s ease-in-out infinite;
     }
 
     .rShape{
-      animation:rMorph 4s cubic-bezier(.4,0,.2,1) infinite;
+      animation:rMorph 4s ease-in-out infinite;
     }
 
-    /* Sequential stretch: Flatten -> Reduced Vertical Stretch -> Horizontal Stretch -> Bounce */
+    /* Clean Loop: Normal -> Vertical Stretch -> Normal -> Horizontal Stretch -> Normal */
     @keyframes stretch{
-      0%, 100% {
+      0%, 50%, 100% {
         transform: scale(1, 1);
       }
-      20% {
-        transform: scale(1.10, 0.88); /* Flatten down to store energy */
+      25% {
+        transform: scale(0.85, 1.21); /* Vertical stretch */
       }
-      42% {
-        transform: scale(0.85, 1.21); /* Vertical stretch (~30% less than 1.30) */
-      }
-      70% {
-        transform: scale(1.25, 0.82); /* Horizontal stretch */
-      }
-      88% {
-        transform: scale(0.97, 1.03); /* Settlement bounce */
+      75% {
+        transform: scale(1.25, 0.85); /* Horizontal stretch */
       }
     }
 
-    /* Path morphing aligned with the timing keyframes */
+    /* Path morphing aligned with timing */
     @keyframes rMorph{
-      0%, 100%{
+      0%, 50%, 100%{
+        /* Normal State */
         d:path("
 M50 40
 L115 40
@@ -432,27 +427,8 @@ C148 128 135 138 112 138
 L90 138
 Z");
       }
-      20%{
-        d:path("
-M45 45
-L120 45
-C175 45 195 62 195 108
-C195 155 168 172 122 178
-L192 295
-L148 295
-L98 185
-L88 185
-L88 295
-L45 295
-Z
-M88 80
-L115 80
-C140 80 152 88 152 108
-C152 130 140 140 115 140
-L88 140
-Z");
-      }
-      42%{
+      25%{
+        /* Vertical Stretch Path */
         d:path("
 M58 25
 L102 25
@@ -472,7 +448,8 @@ C118 142 108 155 90 155
 L72 155
 Z");
       }
-      70%{
+      75%{
+        /* Horizontal Stretch Path */
         d:path("
 M40 45
 L125 45
@@ -490,26 +467,6 @@ L118 80
 C142 80 155 88 155 108
 C155 130 142 140 118 140
 L85 140
-Z");
-      }
-      88%{
-        d:path("
-M52 38
-L113 38
-C162 38 182 58 182 103
-C182 148 158 168 116 173
-L182 298
-L143 298
-L96 188
-L88 188
-L88 298
-L52 298
-Z
-M88 73
-L110 73
-C133 73 145 83 145 104
-C145 126 133 136 110 136
-L88 136
 Z");
       }
     }
