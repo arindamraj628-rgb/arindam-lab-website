@@ -386,23 +386,23 @@
   <style>
     .letter{
       transform-origin:110px 170px;
-      animation:stretch 4s ease-in-out infinite;
+      animation:stretch 4s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite;
     }
 
     .rShape{
-      animation:rMorph 4s ease-in-out infinite;
+      animation:rMorph 4s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite;
     }
 
-    /* Clean Loop: Normal -> Vertical Stretch -> Normal -> Moderate Horizontal Stretch -> Normal */
+    /* Adjusted Loop: 15% lower Y-stretch at 25%, 15% higher X-stretch at 75% */
     @keyframes stretch{
       0%, 50%, 100% {
         transform: scale(1, 1);
       }
       25% {
-        transform: scale(0.85, 1.21); /* Vertical stretch */
+        transform: scale(0.85, 1.03); /* Vertical stretch reduced by 15% */
       }
       75% {
-        transform: scale(1.35, 0.82); /* Reduced horizontal stretch */
+        transform: scale(1.55, 0.82); /* Horizontal stretch increased by 15% */
       }
     }
 
@@ -430,7 +430,7 @@ L90 138
 Z");
       }
       25%{
-        /* Vertical Stretch Path */
+        /* Reduced Vertical Stretch Path */
         d:path("
 M58 25
 L102 25
@@ -451,7 +451,7 @@ L72 155
 Z");
       }
       75%{
-        /* Moderate Horizontal Stretch Path */
+        /* Extended Horizontal Stretch Path */
         d:path("
 M37 46
 L129 46
