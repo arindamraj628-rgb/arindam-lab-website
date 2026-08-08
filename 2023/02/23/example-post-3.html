@@ -66,10 +66,10 @@
 
   <meta name="author" content="john-doe">
   <meta property="og:type" content="article">
-  <meta property="og:updated_time" content="2026-08-08T17:05:42+00:00">
+  <meta property="og:updated_time" content="2026-08-08T17:06:50+00:00">
   <meta property="article:published_time" content="2023-02-23T00:00:00+00:00">
-  <meta property="article:modified_time" content="2026-08-08T17:05:42+00:00">
-  <meta name="revised" content="2026-08-08T17:05:42+00:00">
+  <meta property="article:modified_time" content="2026-08-08T17:06:50+00:00">
+  <meta name="revised" content="2026-08-08T17:06:50+00:00">
 
 
 <script type="application/ld+json">
@@ -79,7 +79,7 @@
       "@type": "BlogPosting",
       "author": { "@type": "Person", "name": "Example post 3" },
       "datePublished": "2023-02-23T00:00:00+00:00",
-      "dateModified": "2026-08-08T17:05:42+00:00",
+      "dateModified": "2026-08-08T17:06:50+00:00",
     
     "name": "Example post 3",
     "description": "&lt;b&gt;A&lt;/b&gt;dvanced &lt;b&gt;M&lt;/b&gt;ultiscale &lt;b&gt;D&lt;/b&gt;esign, &lt;b&gt;F&lt;/b&gt;abrication, and &lt;b&gt;C&lt;/b&gt;haracterization. We develop advanced characterization and fabrication techniques for complex materials.",
@@ -399,7 +399,7 @@
       animation:rMorph 4s ease-in-out infinite;
     }
 
-    /* Clean Loop: Normal -> Vertical Stretch -> Normal -> Horizontal Stretch -> Normal */
+    /* Clean Loop: Normal -> Vertical Stretch -> Normal -> Pronounced Horizontal Stretch -> Normal */
     @keyframes stretch{
       0%, 50%, 100% {
         transform: scale(1, 1);
@@ -408,7 +408,7 @@
         transform: scale(0.85, 1.21); /* Vertical stretch */
       }
       75% {
-        transform: scale(1.25, 0.85); /* Horizontal stretch */
+        transform: scale(1.50, 0.80); /* 20% more pronounced horizontal stretch */
       }
     }
 
@@ -457,24 +457,24 @@ L72 155
 Z");
       }
       75%{
-        /* Horizontal Stretch Path */
+        /* More Pronounced Horizontal Stretch Path */
         d:path("
-M40 45
-L125 45
-C180 45 200 62 200 108
-C200 155 172 172 125 178
-L198 295
-L152 295
-L100 185
-L85 185
-L85 295
-L40 295
+M35 48
+L132 48
+C192 48 212 65 212 110
+C212 158 180 175 130 180
+L205 292
+L158 292
+L102 182
+L82 182
+L82 292
+L35 292
 Z
-M85 80
-L118 80
-C142 80 155 88 155 108
-C155 130 142 140 118 140
-L85 140
+M82 82
+L122 82
+C148 82 162 90 162 110
+C162 132 148 142 122 142
+L82 142
 Z");
       }
     }

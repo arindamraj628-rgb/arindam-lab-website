@@ -445,7 +445,7 @@
       animation:rMorph 4s ease-in-out infinite;
     }
 
-    /* Clean Loop: Normal -> Vertical Stretch -> Normal -> Horizontal Stretch -> Normal */
+    /* Clean Loop: Normal -> Vertical Stretch -> Normal -> Pronounced Horizontal Stretch -> Normal */
     @keyframes stretch{
       0%, 50%, 100% {
         transform: scale(1, 1);
@@ -454,7 +454,7 @@
         transform: scale(0.85, 1.21); /* Vertical stretch */
       }
       75% {
-        transform: scale(1.25, 0.85); /* Horizontal stretch */
+        transform: scale(1.50, 0.80); /* 20% more pronounced horizontal stretch */
       }
     }
 
@@ -503,24 +503,24 @@ L72 155
 Z");
       }
       75%{
-        /* Horizontal Stretch Path */
+        /* More Pronounced Horizontal Stretch Path */
         d:path("
-M40 45
-L125 45
-C180 45 200 62 200 108
-C200 155 172 172 125 178
-L198 295
-L152 295
-L100 185
-L85 185
-L85 295
-L40 295
+M35 48
+L132 48
+C192 48 212 65 212 110
+C212 158 180 175 130 180
+L205 292
+L158 292
+L102 182
+L82 182
+L82 292
+L35 292
 Z
-M85 80
-L118 80
-C142 80 155 88 155 108
-C155 130 142 140 118 140
-L85 140
+M82 82
+L122 82
+C148 82 162 90 162 110
+C162 132 148 142 122 142
+L82 142
 Z");
       }
     }
