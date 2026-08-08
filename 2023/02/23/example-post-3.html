@@ -66,10 +66,10 @@
 
   <meta name="author" content="john-doe">
   <meta property="og:type" content="article">
-  <meta property="og:updated_time" content="2026-08-08T23:53:29+00:00">
+  <meta property="og:updated_time" content="2026-08-08T23:54:54+00:00">
   <meta property="article:published_time" content="2023-02-23T00:00:00+00:00">
-  <meta property="article:modified_time" content="2026-08-08T23:53:29+00:00">
-  <meta name="revised" content="2026-08-08T23:53:29+00:00">
+  <meta property="article:modified_time" content="2026-08-08T23:54:54+00:00">
+  <meta name="revised" content="2026-08-08T23:54:54+00:00">
 
 
 <script type="application/ld+json">
@@ -79,7 +79,7 @@
       "@type": "BlogPosting",
       "author": { "@type": "Person", "name": "Example post 3" },
       "datePublished": "2023-02-23T00:00:00+00:00",
-      "dateModified": "2026-08-08T23:53:29+00:00",
+      "dateModified": "2026-08-08T23:54:54+00:00",
     
     "name": "Example post 3",
     "description": "Advanced Multiscale Design, Fabrication, and Characterization. We develop advanced characterization and fabrication techniques for complex materials.",
@@ -392,23 +392,23 @@
   <style>
     .letter{
       transform-origin:110px 170px;
-      animation:stretch 4s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite;
+      animation:stretch 4s cubic-bezier(0.37, 0, 0.63, 1) infinite;
     }
 
     .rShape{
-      animation:rMorph 4s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite;
+      animation:rMorph 4s cubic-bezier(0.37, 0, 0.63, 1) infinite;
     }
 
-    /* Adjusted Loop: 15% lower Y-stretch at 25%, 15% higher X-stretch at 75% */
+    /* Loop: Vertical scale increased to 1.133, Horizontal scale reduced to 1.395 */
     @keyframes stretch{
       0%, 50%, 100% {
         transform: scale(1, 1);
       }
       25% {
-        transform: scale(0.85, 1.03); /* Vertical stretch reduced by 15% */
+        transform: scale(0.85, 1.133); /* +10% vertical stretch */
       }
       75% {
-        transform: scale(1.55, 0.82); /* Horizontal stretch increased by 15% */
+        transform: scale(1.395, 0.82); /* -10% horizontal stretch */
       }
     }
 
@@ -436,7 +436,7 @@ L90 138
 Z");
       }
       25%{
-        /* Reduced Vertical Stretch Path */
+        /* Vertical Stretch Path */
         d:path("
 M58 25
 L102 25
@@ -457,7 +457,7 @@ L72 155
 Z");
       }
       75%{
-        /* Extended Horizontal Stretch Path */
+        /* Horizontal Stretch Path */
         d:path("
 M37 46
 L129 46
