@@ -391,23 +391,26 @@
       animation:rMorph 4s cubic-bezier(.4,0,.2,1) infinite;
     }
 
-    /* Exaggerated vertical stretch and horizontal squash */
+    /* Sequential stretch: Flatten -> Reduced Vertical Stretch -> Horizontal Stretch -> Bounce */
     @keyframes stretch{
       0%, 100% {
         transform: scale(1, 1);
       }
-      25% {
-        transform: scale(1.15, 0.82); /* Flatten down before spring up */
+      20% {
+        transform: scale(1.10, 0.88); /* Flatten down to store energy */
       }
-      60% {
-        transform: scale(0.78, 1.30); /* Exaggerated vertical stretch */
+      42% {
+        transform: scale(0.85, 1.21); /* Vertical stretch (~30% less than 1.30) */
       }
-      80% {
-        transform: scale(1.05, 0.95); /* Rebound bounce */
+      70% {
+        transform: scale(1.25, 0.82); /* Horizontal stretch */
+      }
+      88% {
+        transform: scale(0.97, 1.03); /* Settlement bounce */
       }
     }
 
-    /* Exaggerated path morphing */
+    /* Path morphing aligned with the timing keyframes */
     @keyframes rMorph{
       0%, 100%{
         d:path("
@@ -429,8 +432,7 @@ C148 128 135 138 112 138
 L90 138
 Z");
       }
-      25%{
-        /* Compressed path when flattened */
+      20%{
         d:path("
 M45 45
 L120 45
@@ -450,28 +452,47 @@ C152 130 140 140 115 140
 L88 140
 Z");
       }
-      60%{
-        /* Extended path when stretched high */
+      42%{
         d:path("
-M60 20
-L100 20
-C140 20 155 75 155 125
-C155 178 130 200 85 215
-L170 335
-L140 335
-L85 230
-L70 230
-L70 335
-L60 335
+M58 25
+L102 25
+C142 25 158 75 158 125
+C158 178 132 200 88 215
+L172 330
+L142 330
+L88 225
+L72 225
+L72 330
+L58 330
 Z
-M70 95
-L88 95
-C105 95 115 105 115 125
-C115 148 105 160 88 160
-L70 160
+M72 90
+L90 90
+C108 90 118 100 118 120
+C118 142 108 155 90 155
+L72 155
 Z");
       }
-      80%{
+      70%{
+        d:path("
+M40 45
+L125 45
+C180 45 200 62 200 108
+C200 155 172 172 125 178
+L198 295
+L152 295
+L100 185
+L85 185
+L85 295
+L40 295
+Z
+M85 80
+L118 80
+C142 80 155 88 155 108
+C155 130 142 140 118 140
+L85 140
+Z");
+      }
+      88%{
         d:path("
 M52 38
 L113 38
