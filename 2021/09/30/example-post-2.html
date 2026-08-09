@@ -66,10 +66,10 @@
 
   <meta name="author" content="jane-smith">
   <meta property="og:type" content="article">
-  <meta property="og:updated_time" content="2026-08-09T00:49:38+00:00">
+  <meta property="og:updated_time" content="2026-08-09T00:55:34+00:00">
   <meta property="article:published_time" content="2021-09-30T00:00:00+00:00">
-  <meta property="article:modified_time" content="2026-08-09T00:49:38+00:00">
-  <meta name="revised" content="2026-08-09T00:49:38+00:00">
+  <meta property="article:modified_time" content="2026-08-09T00:55:34+00:00">
+  <meta name="revised" content="2026-08-09T00:55:34+00:00">
 
 
 <script type="application/ld+json">
@@ -79,7 +79,7 @@
       "@type": "BlogPosting",
       "author": { "@type": "Person", "name": "Example post 2" },
       "datePublished": "2021-09-30T00:00:00+00:00",
-      "dateModified": "2026-08-09T00:49:38+00:00",
+      "dateModified": "2026-08-09T00:55:34+00:00",
     
     "name": "Example post 2",
     "description": "Advanced Multiscale Design, Fabrication, and Characterization. We develop advanced characterization and fabrication techniques for complex materials.",
@@ -338,7 +338,7 @@
     
       <span class="logo">
         
-          <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 680 340" width="100%" height="100%">
+          <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 740 380" width="100%" height="100%">
   <defs>
     <!-- Shared Mosaic Pattern for Letter R -->
     <pattern id="mosaicPatternR" width="220" height="340" patternunits="userSpaceOnUse">
@@ -412,38 +412,34 @@
       </g>
     </pattern>
 
-    <!-- Glow Filter -->
-    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
-      <fedropshadow dx="0" dy="5" stddeviation="6" flood-color="#000000" flood-opacity=".15"></fedropshadow>
+    <!-- Drop Shadow / Glow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <fedropshadow dx="0" dy="6" stddeviation="6" flood-color="#000000" flood-opacity=".18"></fedropshadow>
     </filter>
   </defs>
 
   <style>
-    .letter {
-      transform-origin: 110px 300px;
-      animation: stretch 4s infinite;
+    .letterR {
+      transform-origin: 110px 280px;
+      animation: stretchR 5s cubic-bezier(0.45, 0, 0.15, 1) infinite;
     }
 
     .rShape {
-      animation: rMorph 4s infinite;
+      animation: rMorph 5s cubic-bezier(0.45, 0, 0.15, 1) infinite;
     }
 
-    @keyframes stretch {
+    @keyframes stretchR {
       0% {
         transform: scale(1, 1);
-        animation-timing-function: cubic-bezier(0.37, 0, 0.63, 1);
       }
       20% {
-        transform: scale(0.85, 1.133);
-        animation-timing-function: cubic-bezier(0.37, 0, 0.63, 1);
+        transform: scale(0.88, 1.10);
       }
       40% {
         transform: scale(1, 1);
-        animation-timing-function: cubic-bezier(0.37, 0, 0.63, 1);
       }
       60% {
-        transform: scale(1.395, 0.82);
-        animation-timing-function: cubic-bezier(0.37, 0, 0.63, 1);
+        transform: scale(1.22, 0.88);
       }
       80%, 100% {
         transform: scale(1, 1);
@@ -453,19 +449,15 @@
     @keyframes rMorph {
       0% {
         d: path("M50 40 L115 40 C165 40 185 60 185 105 C185 150 160 170 118 175 L185 300 L145 300 L98 190 L90 190 L90 300 L50 300 Z M90 75 L112 75 C135 75 148 85 148 106 C148 128 135 138 112 138 L90 138 Z");
-        animation-timing-function: cubic-bezier(0.37, 0, 0.63, 1);
       }
       20% {
-        d: path("M58 5.6 L102 5.6 C142 5.6 158 50 158 94.2 C158 141 132 160.5 88 173.8 L172 300 L142 300 L88 207 L72 207 L72 300 L58 300 Z M72 63 L90 63 C108 63 118 72 118 89.6 C118 109 108 120.6 90 120.6 L72 120.6 Z");
-        animation-timing-function: cubic-bezier(0.37, 0, 0.63, 1);
+        d: path("M58 20 L102 20 C142 20 158 55 158 94.2 C158 141 132 160.5 88 173.8 L172 300 L142 300 L88 207 L72 207 L72 300 L58 300 Z M72 63 L90 63 C108 63 118 72 118 89.6 C118 109 108 120.6 90 120.6 L72 120.6 Z");
       }
       40% {
         d: path("M50 40 L115 40 C165 40 185 60 185 105 C185 150 160 170 118 175 L185 300 L145 300 L98 190 L90 190 L90 300 L50 300 Z M90 75 L112 75 C135 75 148 85 148 106 C148 128 135 138 112 138 L90 138 Z");
-        animation-timing-function: cubic-bezier(0.37, 0, 0.63, 1);
       }
       60% {
-        d: path("M37 86.8 L129 86.8 C186 86.8 206 100.8 206 138.5 C206 177 176 191 128 195.9 L201 300 L155 300 L101 204 L83 204 L83 300 L37 300 Z M83 115.5 L120 115.5 C145 115.5 158 122 158 138.5 C158 156.5 145 164.7 120 164.7 L83 164.7 Z");
-        animation-timing-function: cubic-bezier(0.37, 0, 0.63, 1);
+        d: path("M37 70 L129 70 C186 70 206 90 206 128 C206 165 176 181 128 188 L201 300 L155 300 L101 204 L83 204 L83 300 L37 300 Z M83 105 L120 105 C145 105 158 115 158 128 C158 145 145 155 L83 155 Z");
       }
       80%, 100% {
         d: path("M50 40 L115 40 C165 40 185 60 185 105 C185 150 160 170 118 175 L185 300 L145 300 L98 190 L90 190 L90 300 L50 300 Z M90 75 L112 75 C135 75 148 85 148 106 C148 128 135 138 112 138 L90 138 Z");
@@ -474,21 +466,21 @@
   </style>
 
   <!-- LETTER 1: R -->
-  <g transform="translate(0, 0)">
-    <g class="letter" filter="url(#glow)">
+  <g transform="translate(30, 20)">
+    <g class="letterR" filter="url(#glow)">
       <path class="rShape" fill="url(#mosaicPatternR)" fill-rule="evenodd" stroke="#020617" stroke-width="5" stroke-linejoin="round" d="M50 40 L115 40 C165 40 185 60 185 105 C185 150 160 170 118 175 L185 300 L145 300 L98 190 L90 190 L90 300 L50 300 Z M90 75 L112 75 C135 75 148 85 148 106 C148 128 135 138 112 138 L90 138 Z"></path>
     </g>
   </g>
 
   <!-- LETTER 2: A -->
-  <g transform="translate(230, 0)">
+  <g transform="translate(260, 20)">
     <g filter="url(#glow)">
       <path fill="url(#mosaicPatternA)" fill-rule="evenodd" stroke="#020617" stroke-width="5" stroke-linejoin="round" d="M 90 40 L 130 40 L 180 300 L 138 300 L 124 210 L 96 210 L 82 300 L 40 300 Z M 110 95 L 100 165 L 120 165 Z">
-        <animate attributename="d" dur="5s" repeatcount="indefinite" keytimes="0; 0.15; 0.30; 0.42; 0.70; 1.0" keysplines="0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1" calcmode="spline" values="
+        <animate attributename="d" dur="5s" repeatcount="indefinite" keytimes="0; 0.22; 0.45; 0.68; 0.85; 1.0" keysplines="0.45 0 0.15 1; 0.45 0 0.15 1; 0.45 0 0.15 1; 0.45 0 0.15 1; 0.45 0 0.15 1" calcmode="spline" values="
             M 90 40 L 130 40 L 180 300 L 138 300 L 124 210 L 96 210 L 82 300 L 40 300 Z M 110 95 L 100 165 L 120 165 Z;
-            M 85 120 C 100 110 120 110 135 120 C 180 170 190 230 185 300 L 138 300 L 122 235 L 98 235 L 82 300 L 35 300 C 30 230 40 170 85 120 Z M 110 150 C 105 150 102 185 102 195 C 102 205 118 205 118 195 C 118 185 115 150 110 150 Z;
-            M 80 190 C 95 180 125 180 140 190 C 185 220 195 260 190 300 L 140 300 C 128 300 122 265 110 265 C 98 265 92 300 80 300 L 30 300 C 25 260 35 220 80 190 Z M 110 215 C 106 215 104 230 104 240 C 104 245 116 245 116 240 C 116 230 114 215 110 215 Z;
-            M 75 255 C 100 240 120 240 145 255 C 190 275 205 290 195 300 L 140 300 C 125 300 110 298 95 298 C 80 298 65 300 25 300 L 25 300 C 15 290 30 275 75 255 Z M 110 282 C 108 282 105 284 105 285 C 105 286 115 286 115 285 Z;
+            M 70 210 C 90 190 130 190 150 210 C 190 240 205 270 200 300 L 145 300 L 125 255 L 95 255 L 75 300 L 20 300 C 15 270 30 240 70 210 Z M 110 230 C 104 230 102 248 102 252 C 102 258 118 258 118 252 C 118 248 116 230 110 230 Z;
+            M 60 270 C 85 258 135 258 160 270 C 195 282 210 292 205 300 L 150 300 C 130 300 122 290 110 290 C 98 290 90 300 70 300 L 15 300 C 10 292 25 282 60 270 Z M 110 288 C 108 288 106 292 106 294 C 106 296 114 296 114 294 C 114 292 112 288 110 288 Z;
+            M 70 210 C 90 190 130 190 150 210 C 190 240 205 270 200 300 L 145 300 L 125 255 L 95 255 L 75 300 L 20 300 C 15 270 30 240 70 210 Z M 110 230 C 104 230 102 248 102 252 C 102 258 118 258 118 252 C 118 248 116 230 110 230 Z;
             M 90 40 L 130 40 L 180 300 L 138 300 L 124 210 L 96 210 L 82 300 L 40 300 Z M 110 95 L 100 165 L 120 165 Z;
             M 90 40 L 130 40 L 180 300 L 138 300 L 124 210 L 96 210 L 82 300 L 40 300 Z M 110 95 L 100 165 L 120 165 Z"></animate>
       </path>
@@ -496,67 +488,81 @@
   </g>
 
   <!-- LETTER 3: J -->
-  <g transform="translate(460, 0)">
+  <g transform="translate(490, 20)">
     <g filter="url(#glow)" stroke="#020617" stroke-width="4" stroke-linejoin="round">
       <!-- Polygon 1: Top Left Crossbar -->
       <polygon fill="#00bcd4">
-        <animate attributename="points" dur="5s" repeatcount="indefinite" keytimes="0; 0.35; 0.70; 1.0" keysplines="0.37 0 0.63 1; 0.37 0 0.63 1; 0.37 0 0.63 1" calcmode="spline" values="
+        <animate attributename="points" dur="5s" repeatcount="indefinite" keytimes="0; 0.20; 0.40; 0.60; 0.80; 1.0" keysplines="0.45 0 0.15 1; 0.45 0 0.15 1; 0.45 0 0.15 1; 0.45 0 0.15 1; 0.45 0 0.15 1" calcmode="spline" values="
             60,40 120,40 120,80 60,80;
-            15,10 75,5 85,45 25,50;
+            25,20 85,15 95,55 35,60;
+            60,40 120,40 120,80 60,80;
+            25,20 85,15 95,55 35,60;
             60,40 120,40 120,80 60,80;
             60,40 120,40 120,80 60,80"></animate>
       </polygon>
 
       <!-- Polygon 2: Top Right Cap -->
       <polygon fill="#8b5cf6">
-        <animate attributename="points" dur="5s" repeatcount="indefinite" keytimes="0; 0.35; 0.70; 1.0" keysplines="0.37 0 0.63 1; 0.37 0 0.63 1; 0.37 0 0.63 1" calcmode="spline" values="
+        <animate attributename="points" dur="5s" repeatcount="indefinite" keytimes="0; 0.20; 0.40; 0.60; 0.80; 1.0" keysplines="0.45 0 0.15 1; 0.45 0 0.15 1; 0.45 0 0.15 1; 0.45 0 0.15 1; 0.45 0 0.15 1" calcmode="spline" values="
             120,40 180,40 180,80 120,80;
-            175,10 220,20 205,65 160,55;
+            165,20 210,30 195,75 150,65;
+            120,40 180,40 180,80 120,80;
+            165,20 210,30 195,75 150,65;
             120,40 180,40 180,80 120,80;
             120,40 180,40 180,80 120,80"></animate>
       </polygon>
 
       <!-- Polygon 3: Upper Vertical Stem -->
       <polygon fill="#f43f5e">
-        <animate attributename="points" dur="5s" repeatcount="indefinite" keytimes="0; 0.35; 0.70; 1.0" keysplines="0.37 0 0.63 1; 0.37 0 0.63 1; 0.37 0 0.63 1" calcmode="spline" values="
+        <animate attributename="points" dur="5s" repeatcount="indefinite" keytimes="0; 0.20; 0.40; 0.60; 0.80; 1.0" keysplines="0.45 0 0.15 1; 0.45 0 0.15 1; 0.45 0 0.15 1; 0.45 0 0.15 1; 0.45 0 0.15 1" calcmode="spline" values="
             130,80 180,80 180,150 130,150;
-            180,90 220,110 205,180 165,160;
+            170,100 210,120 195,190 155,170;
+            130,80 180,80 180,150 130,150;
+            170,100 210,120 195,190 155,170;
             130,80 180,80 180,150 130,150;
             130,80 180,80 180,150 130,150"></animate>
       </polygon>
 
       <!-- Polygon 4: Lower Vertical Stem -->
       <polygon fill="#3b82f6">
-        <animate attributename="points" dur="5s" repeatcount="indefinite" keytimes="0; 0.35; 0.70; 1.0" keysplines="0.37 0 0.63 1; 0.37 0 0.63 1; 0.37 0 0.63 1" calcmode="spline" values="
+        <animate attributename="points" dur="5s" repeatcount="indefinite" keytimes="0; 0.20; 0.40; 0.60; 0.80; 1.0" keysplines="0.45 0 0.15 1; 0.45 0 0.15 1; 0.45 0 0.15 1; 0.45 0 0.15 1; 0.45 0 0.15 1" calcmode="spline" values="
             130,150 180,150 180,215 130,215;
-            155,180 200,195 185,265 140,250;
+            145,190 190,205 175,275 130,260;
+            130,150 180,150 180,215 130,215;
+            145,190 190,205 175,275 130,260;
             130,150 180,150 180,215 130,215;
             130,150 180,150 180,215 130,215"></animate>
       </polygon>
 
       <!-- Polygon 5: Outer Bottom Curve -->
       <polygon fill="#10b981">
-        <animate attributename="points" dur="5s" repeatcount="indefinite" keytimes="0; 0.35; 0.70; 1.0" keysplines="0.37 0 0.63 1; 0.37 0 0.63 1; 0.37 0 0.63 1" calcmode="spline" values="
+        <animate attributename="points" dur="5s" repeatcount="indefinite" keytimes="0; 0.20; 0.40; 0.60; 0.80; 1.0" keysplines="0.45 0 0.15 1; 0.45 0 0.15 1; 0.45 0 0.15 1; 0.45 0 0.15 1; 0.45 0 0.15 1" calcmode="spline" values="
             130,215 180,215 160,295 105,300;
-            145,255 190,265 160,330 115,325;
+            135,265 180,275 150,340 105,335;
+            130,215 180,215 160,295 105,300;
+            135,265 180,275 150,340 105,335;
             130,215 180,215 160,295 105,300;
             130,215 180,215 160,295 105,300"></animate>
       </polygon>
 
       <!-- Polygon 6: Upward Left Hook Tip -->
       <polygon fill="#f59e0b">
-        <animate attributename="points" dur="5s" repeatcount="indefinite" keytimes="0; 0.35; 0.70; 1.0" keysplines="0.37 0 0.63 1; 0.37 0 0.63 1; 0.37 0 0.63 1" calcmode="spline" values="
+        <animate attributename="points" dur="5s" repeatcount="indefinite" keytimes="0; 0.20; 0.40; 0.60; 0.80; 1.0" keysplines="0.45 0 0.15 1; 0.45 0 0.15 1; 0.45 0 0.15 1; 0.45 0 0.15 1; 0.45 0 0.15 1" calcmode="spline" values="
             35,175 80,185 80,235 35,215;
-            10,210 50,225 45,280 5,260;
+            20,220 60,235 55,290 15,270;
+            35,175 80,185 80,235 35,215;
+            20,220 60,235 55,290 15,270;
             35,175 80,185 80,235 35,215;
             35,175 80,185 80,235 35,215"></animate>
       </polygon>
 
       <!-- Polygon 7: Inner Hook Bottom Curve -->
       <polygon fill="#8b5cf6">
-        <animate attributename="points" dur="5s" repeatcount="indefinite" keytimes="0; 0.35; 0.70; 1.0" keysplines="0.37 0 0.63 1; 0.37 0 0.63 1; 0.37 0 0.63 1" calcmode="spline" values="
+        <animate attributename="points" dur="5s" repeatcount="indefinite" keytimes="0; 0.20; 0.40; 0.60; 0.80; 1.0" keysplines="0.45 0 0.15 1; 0.45 0 0.15 1; 0.45 0 0.15 1; 0.45 0 0.15 1; 0.45 0 0.15 1" calcmode="spline" values="
             35,215 80,235 130,215 105,300;
-            15,260 55,275 125,245 95,330;
+            25,270 65,285 135,255 105,340;
+            35,215 80,235 130,215 105,300;
+            25,270 65,285 135,255 105,340;
             35,215 80,235 130,215 105,300;
             35,215 80,235 130,215 105,300"></animate>
       </polygon>
