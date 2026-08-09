@@ -437,15 +437,15 @@
 
   <style>
     .letter{
-      transform-origin:110px 170px;
-      animation:stretch 4s infinite;
+      /* Transform origin shifted to Y=300px so bottom remains stationary */
+      transform-origin: 110px 300px;
+      animation: stretch 4s infinite;
     }
 
     .rShape{
-      animation:rMorph 4s infinite;
+      animation: rMorph 4s infinite;
     }
 
-    /* Keyframe timing adjusted: active motion ends at 80%, static pause from 80% to 100% */
     @keyframes stretch{
       0% {
         transform: scale(1, 1);
@@ -491,23 +491,24 @@ Z");
         animation-timing-function: cubic-bezier(0.37, 0, 0.63, 1);
       }
       20% {
+        /* Bottom baseline aligned to 300px */
         d:path("
-M58 25
-L102 25
-C142 25 158 75 158 125
-C158 178 132 200 88 215
-L172 330
-L142 330
-L88 225
-L72 225
-L72 330
-L58 330
+M58 5.6
+L102 5.6
+C142 5.6 158 50 158 94.2
+C158 141 132 160.5 88 173.8
+L172 300
+L142 300
+L88 207
+L72 207
+L72 300
+L58 300
 Z
-M72 90
-L90 90
-C108 90 118 100 118 120
-C118 142 108 155 90 155
-L72 155
+M72 63
+L90 63
+C108 63 118 72 118 89.6
+C118 109 108 120.6 90 120.6
+L72 120.6
 Z");
         animation-timing-function: cubic-bezier(0.37, 0, 0.63, 1);
       }
@@ -533,23 +534,24 @@ Z");
         animation-timing-function: cubic-bezier(0.37, 0, 0.63, 1);
       }
       60% {
+        /* Bottom baseline aligned to 300px */
         d:path("
-M37 46
-L129 46
-C186 46 206 63 206 109
-C206 156 176 173 128 179
-L201 293
-L155 293
-L101 183
-L83 183
-L83 293
-L37 293
+M37 86.8
+L129 86.8
+C186 86.8 206 100.8 206 138.5
+C206 177 176 191 128 195.9
+L201 300
+L155 300
+L101 204
+L83 204
+L83 300
+L37 300
 Z
-M83 81
-L120 81
-C145 81 158 89 158 109
-C158 131 145 141 120 141
-L83 141
+M83 115.5
+L120 115.5
+C145 115.5 158 122 158 138.5
+C158 156.5 145 164.7 120 164.7
+L83 164.7
 Z");
         animation-timing-function: cubic-bezier(0.37, 0, 0.63, 1);
       }
