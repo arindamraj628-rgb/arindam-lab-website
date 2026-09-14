@@ -2,11 +2,13 @@
 title: News
 nav:
   order: 6
-  tooltip: Media Coverage
+  tooltip: News and Media Coverage
 ---
-# {% include icon.html icon="fa fa-newspaper-o" %} Media Coverage
+# {% include icon.html icon="fa fa-newspaper-o" %} News and Media Coverage
 
-Here are some representative publications. For a full list, visit my <a href="https://scholar.google.com/citations?user=3Fk2GOoAAAAJ&hl=en&authuser=1" target="_blank">Google Scholar page</a>.
+1. Better metals are now possible through a novel analysis method <a href="https://www.asminternational.org/better-metals-are-now-possible-through-a-novel-analysis-method/#" target="_blank">{\textbf{ASM International}, September 1, 2026}}
+ 
+For a full list, visit my <a href="https://scholar.google.com/citations?user=3Fk2GOoAAAAJ&hl=en&authuser=1" target="_blank">Google Scholar page</a>.
 {% include section.html %}
 
 ## Highlighted
