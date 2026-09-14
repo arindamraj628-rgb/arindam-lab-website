@@ -1,7 +1,7 @@
 ---
 name: Arindam Raj
 image: images/pic_arindam_headshot.JPG
-role: Principal Investigator
+role: Weinberg Family Postdoctoral Fellow
 affiliation: Northwestern University
 aliases:
   - A. Raj
