@@ -1,5 +1,5 @@
 ---
-title: Contact
+title: News
 nav:
   order: 6
   tooltip: Media Coverage
