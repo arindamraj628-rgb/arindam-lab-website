@@ -3,13 +3,13 @@
 
 # Unlocking New Materials Property Spaces through Deterministic, Nanoscale Control for Bulk Alloys and Composites.
 
-We develop robust characterization techniques for mechanical characterization of microstrcutures across several length scales, down to the nanoscale, and devise advanced fabrication strategies integrating nanoscale design for fabrication of mechanically robust materials.   
+We develop robust characterization techniques for mechanical characterization of microstructures across several length scales, down to the nanoscale, and devise advanced fabrication strategies integrating nanoscale design for fabrication of mechanically robust materials.   
 {% include section.html %}
 
 ## Highlights
 
 {% capture text %}
-High-throughput technique, Local Deformation Mapping (LDM) developed to probe a general microstrcuture at nanoscale resolution over ~mm cross-section.
+High-throughput technique, Local Deformation Mapping (LDM) developed to probe a general microstructure at nanoscale resolution over ~mm cross-section.
 {%
   include button.html
   link="research"
