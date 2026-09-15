@@ -59,3 +59,11 @@ $wrap: 800px;
     max-width: calc($wrap / 2);
   }
 }
+
+.feature-image[aria-label="Reach Out"] {
+  aspect-ratio: auto;
+}
+
+.feature-image[aria-label="Reach Out"] img {
+  height: auto;
+}
