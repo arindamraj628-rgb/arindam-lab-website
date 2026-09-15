@@ -46,7 +46,7 @@ Feel free to reach out for any queries, discussions, or collaborations!
 
 {%
   include figure.html
-  image="images/yale_phd.jpg"
+  image="images/yale_4.jpg"
   caption="via Yale University"
   style="aspect-ratio: 16 / 9; object-fit: cover; width: 100%;"
 %}
