@@ -6,6 +6,7 @@ affiliation: Weinberg Family Postdoctoral Fellow,<br>Northwestern University
 aliases:
   - A. Raj
   - A Raj
+  - Arindam
 
 links:
   home-page: https://arindamraj628-rgb.github.io/arindam-lab-website/
