@@ -12,8 +12,8 @@ Feel free to reach out for any queries, discussions, or collaborations!
 {%
   include button.html
   type="email"
-  text="arindam.raj@northwestern.com"
-  link="arindam.raj@northwestern.com"
+  text="arindam.raj [at] northwestern [dot] com"
+  <!-- link="arindam.raj@northwestern.com" -->
 %}
 <!-- {%
   include button.html
