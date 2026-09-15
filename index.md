@@ -3,7 +3,7 @@
 
 # Unlocking New Materials Property Spaces through Deterministic, Nanoscale Control for Bulk Alloys and Composites.
 
-We develop robust characterization techniques for mechanical characterization of microstructures across several length scales, down to the nanoscale, and devise advanced fabrication strategies integrating nanoscale design for fabrication of mechanically robust materials.   
+Developing characterization techniques for mechanical characterization of microstructures across several length scales, down to the nanoscale, and devising advanced fabrication strategies integrating nanoscale design for the next generation of structural materials.   
 {% include section.html %}
 
 ## Highlights
