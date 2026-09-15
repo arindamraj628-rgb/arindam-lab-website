@@ -7,7 +7,7 @@ nav:
 
 # {% include icon.html icon="fa-solid fa-wrench" %} Research Themes and Projects
 
-Interested in developing high-throughput multiscale characterization and  synthesis techniques to design damage-tolerant alloys that can accommodate and repair structural damage. By using and extending nanomolding based Local Deformation Mapping which I invented, I  study transport phenomenon and the emergent mechanical properties across multiple length scales with nanoscale resolution. Crucially, these transport properties can be indicators of the ability to mitigate damage, accommodate defects, and even heal. 
+Interested in developing rapid multiscale characterization and  synthesis techniques to design damage-tolerant alloys that can accommodate and repair structural damage. I  study transport phenomenon and the emergent mechanical properties across multiple length scales with nanoscale resolution in structural materials, aiming to identify the indicators for their ability to mitigate damage, accommodate defects, and even heal. 
 
 {% include tags.html tags="Diffusion, Eutectic, Nanofabrication, Self-assembly, Bulk metallic glass, Nanomechanics, Artificial Intelligence" %}
 
