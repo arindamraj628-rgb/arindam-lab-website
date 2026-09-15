@@ -78,7 +78,7 @@ Feel free to reach out for any queries, discussions, or collaborations!
 
 {% capture col2 %}
 <p>
-  <a href="https://campusphotos.yale.edu/portals/campus-photos/#asset/81242">"Saybrook Hall"</a> by Daniel Havlat via Yale Campus Photos<a href="https://communications.yale.edu/media/request-yale-photos-videos"></a>.
+  <a href="https://campusphotos.yale.edu/portals/campus-photos/#asset/81242">"Saybrook Hall"</a> by Daniel Havlat via <a href="https://communications.yale.edu/media/request-yale-photos-videos">Yale Campus Photos</a>.
 </p>
 
 {% endcapture %}
