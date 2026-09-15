@@ -30,4 +30,12 @@
   display: block;
 }
 
+.figure-image[aria-label="via Yale University"] img {
+  width: 100% !important;
+  height: auto;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  display: block;
+}
+
 /*# sourceMappingURL=figure.css.map */
