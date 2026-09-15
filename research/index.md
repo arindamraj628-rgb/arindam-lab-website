@@ -7,7 +7,7 @@ nav:
 
 # {% include icon.html icon="fa-solid fa-wrench" %} Research Themes and Projects
 
-Interested in developing rapid multiscale characterization and  synthesis techniques to design damage-tolerant alloys that can accommodate and repair structural damage. I  study transport phenomenon and the emergent mechanical properties across multiple length scales with nanoscale resolution in structural materials, aiming to identify the indicators for their ability to mitigate damage, accommodate defects, and even heal. 
+Interested in developing rapid multiscale characterization and  synthesis techniques with the ultimate aim to design damage-tolerant structural materials that can accommodate and even repair structural damage. I study transport phenomenon and the emergent mechanical properties across multiple length scales with nanoscale resolution, aiming to identify the indicators for ability to mitigate damage, accommodate defects, and  heal. 
 
 {% include tags.html tags="Diffusion, Eutectic, Nanofabrication, Self-assembly, Bulk metallic glass, Nanomechanics, Artificial Intelligence" %}
 
