@@ -26,7 +26,7 @@
 
 - title: Metallic Glass under Irradiation
   subtitle: Strengthening of Zr-based metallic glass at low dose helium ion irradiation
-  image: images/photo.jpg
+  image: images/j_nuc.gif
   link: https://www.sciencedirect.com/science/article/abs/pii/S0022311524000461
   description: A strengthening effect in Zr-based metallic glass under low-dose helium ion irradiation in the absence of nanocrystals is observed. This is measured through nanoindentation hardness measurements revealing an initial increase in hardness with low irradiation doses, followed by a rapid decrease at higher doses.
   repo: greenelab/lab-website-template
@@ -36,7 +36,7 @@
 
 - title: Machine learning performance in metallic glass physics
   subtitle: Comparing machine learning versus human learning in predicting glass-forming ability of metallic glasses
-  image: images/photo.jpg
+  image: images/ML_BMG.jpg
   link: https://www.sciencedirect.com/science/article/pii/S1359645422008746
   description: The limited performance of ML model originates from the inability to accurately represent alloy features through elemental features, showing that physical insights about mixing behavior are required to develop predictable ML models.
   repo: greenelab/lab-website-template
