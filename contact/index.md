@@ -46,7 +46,7 @@ Feel free to reach out for any queries, discussions, or collaborations!
 
 {%
   include figure.html
-  image="images/yale_4.jpg"
+  image="images/yale_5.jpg"
   caption="via Yale University"
   style="aspect-ratio: 16 / 9; object-fit: cover; width: 100%;"
 %}
@@ -78,7 +78,7 @@ Feel free to reach out for any queries, discussions, or collaborations!
 
 {% capture col2 %}
 <p>
-  <a href="https://campusphotos.yale.edu/portals/campus-photos/#asset/26393">"Snow on Old Campus"</a> by Nune Garipian via Yale Campus Photos<a href="https://campusphotos.yale.edu/portals/campus-photos/#asset/26393"></a>.
+  <a href="https://campusphotos.yale.edu/portals/campus-photos/#asset/81242">"Saybrook Hall"</a> by Daniel Havlat via Yale Campus Photos<a href="https://communications.yale.edu/media/request-yale-photos-videos"></a>.
 </p>
 
 {% endcapture %}
