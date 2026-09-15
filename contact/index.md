@@ -9,16 +9,12 @@ nav:
 
 Feel free to reach out for any queries, discussions, or collaborations!
 
-<!--{%
+{%
   include button.html
   type="email"
   text="arindam.raj [at] northwestern [dot] com"
-   link="arindam.raj@northwestern.com"
-%}  -->
-<p>
-  {% include icon.html icon="fa-solid fa-envelope" %}
-  arindam.raj [at] northwestern [dot] com
-</p>
+   link="arindam [at] raj@northwestern [dot] com"
+%}
 
 <!-- {%
   include button.html
