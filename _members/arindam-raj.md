@@ -1,8 +1,8 @@
 ---
-name: Arindam Raj<br>Weinberg Family Postdoctoral Fellow
+name: Arindam Raj
 image: images/pic_arindam_headshot.JPG
 role: 
-affiliation: Northwestern University
+affiliation: Weinberg Family Postdoctoral Fellow<br>Northwestern University
 aliases:
   - A. Raj
   - A Raj
