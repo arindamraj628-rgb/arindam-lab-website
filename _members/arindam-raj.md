@@ -14,5 +14,5 @@ links:
 ---
 I am interested in fabrication and mechanical characterization of structural materials with a vision towards developing microstructural designs which can potentially dynamically heal under extreme conditions. I study diverse systems to suit a wide range of applications, spanning alloys, metallic glasses to soft, colloidal polymeric systems, and composites thereof.
 
-Current Affiliation: [Mirkin Research Group](https://mirkin-group.northwestern.edu/){:target="_blank"}, Department of Chemistry, Northwestern University<br>
-Previously at: [Schroers Lab](https://www.schroerslab.com/){:target="_blank"}, Department of Mechanical Engineering & Materials Science, Yale University
+Current Affiliation: [Mirkin Research Group](https://mirkin-group.northwestern.edu/), Department of Chemistry, Northwestern University<br>
+Previously at: [Schroers Lab](https://www.schroerslab.com/), Department of Mechanical Engineering & Materials Science, Yale University
