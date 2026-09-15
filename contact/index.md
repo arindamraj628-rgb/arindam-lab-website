@@ -35,7 +35,7 @@ Feel free to reach out for any queries, discussions, or collaborations!
 
 {%
   include figure.html
-  image="images/northwestern_campus.jpg"
+  image="images/NU_postdoc.jpg"
   caption="Currently at Northwestern University"
   style="aspect-ratio: 16 / 9; object-fit: cover; width: 100%;"
 %}
@@ -70,8 +70,8 @@ Feel free to reach out for any queries, discussions, or collaborations!
 
 {% capture col1 %}
 <p>
-  <!--<a href="https://en.wikipedia.org/wiki/File:Northwestern_University_Aerial.jpg">"Northwestern University Aerial"</a> by Joshua Sukoff is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.  -->
-  <a href="https://news.northwestern.edu/for-journalists/news-releases/university-media-kit/evanston-campus">"Evanston Campus"</a>
+  <a href="https://en.wikipedia.org/wiki/File:Northwestern_University_Aerial.jpg">"Northwestern University Aerial"</a> by Joshua Sukoff is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>. 
+  <!--<a href="https://news.northwestern.edu/for-journalists/news-releases/university-media-kit/evanston-campus">"Evanston Campus"</a> -->
 </p>
 
 {% endcapture %}
