@@ -78,7 +78,7 @@ Feel free to reach out for any queries, discussions, or collaborations!
 
 {% capture col2 %}
 <p>
-  <a href="https://jenikirbyhistory.getarchive.net/media/yale-university-landscape-universities-nature-landscapes-e3b4d0">"Yale University Landscape"</a> via Pixaby is marked with <a href="https://web.archive.org/web/20170727004823/https://pixabay.com/en/service/license/"> Creative Commons CC0 with additional limitations</a>.
+  <a href="https://campusphotos.yale.edu/portals/campus-photos/#asset/26393">"Snow on Old Campus"</a> by Nune Garipian via Yale Campus Photos <a href="https://campusphotos.yale.edu/portals/campus-photos/#asset/26393">.
 </p>
 
 {% endcapture %}
