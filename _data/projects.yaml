@@ -1,7 +1,7 @@
 - title: High-Throughput Local Diffusion Mapping
   subtitle: Multiscale diffusion measurement with nanoscale resolution
   group: featured
-  image: images/EBSD_LDM.png
+  image: images/ldm.png
   link: https://www.nature.com/articles/s41467-026-75351-8
   description:  Introducing a high-resolution, high-throughput characterization technique. LDM determines what diffuses locally through microstructures, experimentally realized by pressing a nanomold onto a microstructure, forming a nanorod array
   repo: greenelab/lab-website-template
@@ -11,10 +11,10 @@
     - eutectic 
     - nanomechanics
 
-- title: Thermomechanical Nanomofabrication
+- title: Thermomechanical Nanofabrication
   subtitle: Fast diffusion in eutectic systems enable nanofabrication at room temperature
   group: featured
-  image: images/photo.jpg
+  image: images/eutectic_diffusion.png
   link: https://pubs.acs.org/ancac3/article/15/9/14275/1416940/Nanomolding-of-Gold-and-Gold-Silicon
   description: Revealing ehanced eutectic interface diffusion, which provides a thermomechanical nanofabrication method at low temperatures.
   repo: greenelab/lab-website-template
