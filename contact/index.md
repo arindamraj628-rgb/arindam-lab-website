@@ -15,12 +15,12 @@ Feel free to reach out for any queries, discussions, or collaborations!
   text="arindam.raj@northwestern.com"
   link="arindam.raj@northwestern.com"
 %}
-{%
+<!-- {%
   include button.html
   type="phone"
   text="(123) 456-7890"
   link="+1-123-456-7890"
-%}
+%}  -->
 {%
   include button.html
   type="address"
