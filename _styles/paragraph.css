@@ -1,7 +1,10 @@
 p {
   margin: 20px 0;
-  text-align: left;
+  text-align: justify;
   line-height: 1.65;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+  overflow-wrap: break-word;
 }
 
 /*# sourceMappingURL=paragraph.css.map */
