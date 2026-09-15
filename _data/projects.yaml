@@ -23,39 +23,25 @@
     - diffusion
     - eutectic 
 
-- title: Cool Tutorial
-  subtitle: a subtitle
-  image: images/photo.jpg
-  link: https://github.com/
-  description: Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  repo: greenelab/lab-website-template
-  tags:
-    - resource
-    - publication
 
-- title: Cool Web App
-  subtitle: a subtitle
+- title: Metallic Glass under Irradiation
+  subtitle: Strengthening of Zr-based metallic glass at low dose helium ion irradiation
   image: images/photo.jpg
-  link: https://github.com/
-  description: Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  link: https://www.sciencedirect.com/science/article/abs/pii/S0022311524000461
+  description: A strengthening effect in Zr-based metallic glass under low-dose helium ion irradiation in the absence of nanocrystals is observed. This is measured through nanoindentation hardness measurements revealing an initial increase in hardness with low irradiation doses, followed by a rapid decrease at higher doses.
   repo: greenelab/lab-website-template
   tags:
-    - software
+    - bulk-metallic-glass
+    - nanomechanics
 
-- title: Cool Web Server
-  subtitle: a subtitle
+- title: Machine learning performance in metallic glass physics
+  subtitle: Comparing machine learning versus human learning in predicting glass-forming ability of metallic glasses
   image: images/photo.jpg
-  link: https://github.com/
-  description: Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  link: https://www.sciencedirect.com/science/article/pii/S1359645422008746
+  description: The limited performance of ML model originates from the inability to accurately represent alloy features through elemental features, showing that physical insights about mixing behavior are required to develop predictable ML models.
   repo: greenelab/lab-website-template
   tags:
-    - software
+    - bulk-metallic-glass
+    -artificial-intelligence
 
-- title: Cool Web Server
-  subtitle: a subtitle
-  image: images/photo.jpg
-  link: https://github.com/
-  description: Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  repo: greenelab/lab-website-template
-  tags:
-    - software
+
