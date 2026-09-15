@@ -73,4 +73,8 @@
   display: none;
 }
 
+.portrait-image[src$="/pic_arindam_headshot.png"] {
+  object-position: 50% 0%;
+}
+
 /*# sourceMappingURL=portrait.css.map */
