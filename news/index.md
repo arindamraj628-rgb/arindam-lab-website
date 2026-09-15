@@ -1,7 +1,7 @@
 ---
 title: News
 nav:
-  order: 6
+  order: 5
   tooltip: News and Media Coverage
 ---
 # {% include icon.html icon="fa fa-newspaper-o" %} News and Media Coverage
