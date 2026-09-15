@@ -1,1 +1,1 @@
-Sitemap: http://arindamraj.com/sitemap.xml
+Sitemap: https://arindamraj.com/sitemap.xml
