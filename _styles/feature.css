@@ -47,5 +47,12 @@
     max-width: 400px;
   }
 }
+.feature-image[aria-label="Reach Out"] {
+  aspect-ratio: auto;
+}
+
+.feature-image[aria-label="Reach Out"] img {
+  height: auto;
+}
 
 /*# sourceMappingURL=feature.css.map */
