@@ -85,7 +85,7 @@ Feel free to reach out for any queries, discussions, or collaborations!
 
 {% capture col3 %}
 <p>
-  <a href="https://en.wikipedia.org/wiki/File:Indian_Institute_of_Technology_Kanpur.jpg">"Night View of IIT Kanpur"</a> by NiteshSingh6789 via Wikimedia Commons is marked with <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.en">CC0 1.0</a>.
+  <a href="https://en.wikipedia.org/wiki/File:Indian_Institute_of_Technology_Kanpur.jpg">"Night View of IIT Kanpur"</a> by Nitesh-<br>Singh6789 via Wikimedia Commons is marked with <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.en">CC0 1.0</a>.
 </p>
 
 {% endcapture %}
