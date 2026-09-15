@@ -9,16 +9,19 @@
     - diffusion
     - multiscale characterization
     - eutectic 
+    - nanomechanics
 
-- title: Cool Package
-  subtitle: a subtitle
+- title: Thermomechanical Nanomofabrication
+  subtitle: Fast diffusion in eutectic systems enable nanofabrication at room temperature
   group: featured
   image: images/photo.jpg
-  link: https://github.com/
-  description: Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  link: https://pubs.acs.org/ancac3/article/15/9/14275/1416940/Nanomolding-of-Gold-and-Gold-Silicon
+  description: Revealing ehanced eutectic interface diffusion, which provides a thermomechanical nanofabrication method at low temperatures.
   repo: greenelab/lab-website-template
   tags:
-    - resource
+    - nanofabrication
+    - diffusion
+    - eutectic 
 
 - title: Cool Tutorial
   subtitle: a subtitle
