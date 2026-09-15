@@ -78,7 +78,7 @@ Feel free to reach out for any queries, discussions, or collaborations!
 
 {% capture col2 %}
 <p>
-  <a href="https://campusphotos.yale.edu/portals/campus-photos/#asset/26393">"Snow on Old Campus"</a> by Nune Garipian via Yale Campus Photos <a href="https://campusphotos.yale.edu/portals/campus-photos/#asset/26393"></a>.
+  <a href="https://campusphotos.yale.edu/portals/campus-photos/#asset/26393">"Snow on Old Campus"</a> by Nune Garipian via Yale Campus Photos<a href="https://campusphotos.yale.edu/portals/campus-photos/#asset/26393"></a>.
 </p>
 
 {% endcapture %}
