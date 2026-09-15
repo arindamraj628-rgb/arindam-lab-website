@@ -9,7 +9,7 @@ nav:
 
 Interested in developing high-throughput multiscale characterization and  synthesis techniques to design damage-tolerant alloys that can accommodate and repair structural damage. By using and extending nanomolding based Local Deformation Mapping which I invented, I  study transport phenomenon and the emergent mechanical properties across multiple length scales with nanoscale resolution. Crucially, these transport properties can be indicators of the ability to mitigate damage, accommodate defects, and even heal. 
 
-{% include tags.html tags="Diffusion, Eutectic, Nanofabrication, Self-assembly, Bulk metallic glass, Nanomechanics, Artifical Intelligence" %}
+{% include tags.html tags="Diffusion, Eutectic, Nanofabrication, Self-assembly, Bulk metallic glass, Nanomechanics, Artificial Intelligence" %}
 
 {% include search-info.html %}
 
