@@ -25,12 +25,12 @@ High-throughput technique, Local Deformation Mapping (LDM) developed to probe a 
   include feature.html
   image="images/research1.png"
   link="research"
-  title="Our Research"
+  title="Research"
   text=text
 %}
 
 {% capture text %}
-<p style="text-align: center;">Check out our research and review articles.</p>
+<p style="text-align: center;">Published research and review articles.</p>
 
 {%
   include button.html
@@ -47,7 +47,7 @@ High-throughput technique, Local Deformation Mapping (LDM) developed to probe a 
   include feature.html
   image="images/paper1.png"
   link="publications"
-  title="Our Publications"
+  title="Publications"
   flip=true
   style="bare"
   text=text
