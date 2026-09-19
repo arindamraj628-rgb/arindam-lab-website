@@ -91,12 +91,7 @@ nav:
   <div class="cv-details">
 
     <p>
-      I am interested in fabrication and mechanical characterization
-      of structural materials with a vision towards developing
-      microstructural designs which can potentially dynamically heal
-      under extreme conditions. I study diverse systems spanning
-      alloys, metallic glasses to soft, colloidal polymeric systems,
-      and composites thereof.
+
     </p>
 
     <p>
