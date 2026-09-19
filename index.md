@@ -3,7 +3,10 @@
 
 # Unlocking New Materials Property Spaces through Deterministic, Nanoscale Control for Bulk Alloys and Composites.
 
-Developing characterization techniques for mechanical characterization of microstructures across several length scales, down to the nanoscale, and devising advanced fabrication strategies integrating nanoscale design for the next generation of structural materials.   
+How do atoms and defects move, interact, and organize in materials? <br> How can we use that knowledge to create materials with different properties? <br> My research explores these questions across different types of materials, connecting processes at the nanoscale to bulk scale properties. I develop methods map how atoms move through metals' and alloys' microstructure, and develop new designs for materials which can perform better at high temperatures or other extreme conditions by accommodating and even healing defects which may otherwise cause failure.
+
+
+<!--Developing characterization techniques for mechanical characterization of microstructures across several length scales, down to the nanoscale, and devising advanced fabrication strategies integrating nanoscale design for the next generation of structural materials.-->   
 {% include section.html %}
 
 ## Highlights
