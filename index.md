@@ -2,7 +2,7 @@
 ---
 
 # Towards Materials Capable of Repairing Themselves 
-<p style="text-align: center;">How do atoms and defects move, interact, and organize in materials? <br> How can we use that knowledge to create materials with self-healing properties? <br></p> My research explores these questions across different types of materials, connecting processes at the nanoscale to bulk scale properties. I develop methods map how atoms move through metals' and alloys' microstructure, and develop new designs for materials which can perform better at high temperatures or other extreme conditions by accommodating and even healing defects that otherwise may cause failure.
+<p style="text-align: center;">How do atoms and defects move, interact, and organize in materials? <br> How can we use that knowledge to create materials with self-healing properties? <br></p> My research explores these questions across different types of materials, connecting processes at the nanoscale to bulk scale properties. I develop methods map how atoms move through metals and alloys microstructures, and develop new designs for materials which can perform better at high temperatures or other extreme conditions by accommodating and even healing defects that otherwise may cause failure.
 
 
 <!--Developing characterization techniques for mechanical characterization of microstructures across several length scales, down to the nanoscale, and devising advanced fabrication strategies integrating nanoscale design for the next generation of structural materials.-->   
