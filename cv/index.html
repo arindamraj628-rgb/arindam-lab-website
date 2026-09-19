@@ -2166,7 +2166,7 @@
       
     
       
-        <a href="/cv/" data-tooltip="Curriculum Vitae">
+        <a href="/cv/" data-tooltip="About Arindam Raj">
           CV
         </a>
       
@@ -2207,40 +2207,75 @@
     <h1 id="-cv">
 <i class="icon fa-solid fa-file-lines"></i> CV</h1>
 
-<div class="float">
-  
-<div class="portrait-wrapper">
-  <a href="/members/arindam-raj.html" class="portrait" data-style="" aria-label="Arindam Raj">
-    
+<style>
+  .cv-profile {
+    display: grid;
+    grid-template-columns: 220px minmax(0, 1fr);
+    gap: 40px;
+    align-items: start;
+  }
 
-    <img src="/images/pic_arindam_headshot.png" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+  .cv-sidebar {
+    text-align: center;
+  }
 
-    
-      <span class="portrait-name">
-        Arindam Raj
-      </span>
-    
+  .cv-sidebar p {
+    text-align: center;
+  }
 
-    
+  .cv-photo {
+    display: block;
+    width: 175px;
+    aspect-ratio: 1;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 50% 0%;
+    box-shadow: var(--shadow);
+  }
 
-    
-      <span class="portrait-affiliation">
-        Weinberg Family Postdoctoral Fellow,<br>Northwestern University
-      </span>
-    
-  </a>
-</div>
+  .cv-details {
+    min-width: 0;
+  }
 
-<div>
-  
-    
-    
-    
+  .cv-details > p:first-child {
+    margin-top: 0;
+  }
+
+  .cv-pdf {
+    display: block;
+    width: 100%;
+    height: 800px;
+    border: none;
+  }
+
+  @media (max-width: 700px) {
+    .cv-profile {
+      grid-template-columns: minmax(0, 1fr);
+      gap: 24px;
+    }
+  }
+</style>
+
+<div class="cv-profile">
+
+  <aside class="cv-sidebar">
+    <img class="cv-photo" src="/images/pic_arindam_headshot.png" alt="Arindam Raj">
+
+    <p>
+      <strong>Arindam Raj</strong><br>
+      Weinberg Family<br>
+      Postdoctoral Fellow,<br>
+      Northwestern University
+    </p>
+
+    <div>
+      
 
 
 
   <div class="button-wrapper">
-    <a class="button" href="https://arindamraj628-rgb.github.io/arindam-lab-website/" data-tooltip="Home page" data-style="bare" aria-label="Home page">
+    <a class="button" href="/" data-tooltip="Home page" data-style="bare" aria-label="Home page">
       <i class="icon fa-solid fa-house-user"></i>
       
         <span>Home Page</span>
@@ -2248,11 +2283,9 @@
     </a>
   </div>
 
-<br>
-  
-    
-    
-    
+
+      <br>
+      
 
 
 
@@ -2265,31 +2298,44 @@
     </a>
   </div>
 
-<br>
-  
+
+    </div>
+  </aside>
+
+  <div class="cv-details">
+
+    <p>
+      I am interested in fabrication and mechanical characterization
+      of structural materials with a vision towards developing
+      microstructural designs which can potentially dynamically heal
+      under extreme conditions. I study diverse systems spanning
+      alloys, metallic glasses to soft, colloidal polymeric systems,
+      and composites thereof.
+    </p>
+
+    <p>
+      <strong>Current affiliation:</strong>
+      <a href="https://mirkin-group.northwestern.edu/">
+        Mirkin Research Group
+      </a>,
+      Department of Chemistry, Northwestern University
+      <br>
+      <strong>Previously at:</strong>
+      <a href="https://www.schroerslab.com/">Schroers Lab</a>,
+      Department of Mechanical Engineering &amp; Materials Science,
+      Yale University
+    </p>
+
+    <p>
+      <a href="/cv/ArindamCV_for_website.pdf" target="_blank" rel="noopener">
+        Open CV (PDF)
+      </a>
+    </p>
+
+    <iframe class="cv-pdf" src="/cv/ArindamCV_for_website.pdf" title="Arindam Raj — Curriculum Vitae"></iframe>
+
+  </div>
 </div>
-
-
-</div>
-
-<p>I am interested in fabrication and mechanical characterization of structural materials with a vision towards developing microstructural designs which can potentially dynamically heal under extreme conditions. I study diverse systems spanning alloys, metallic glasses to soft, colloidal polymeric systems, and composites thereof.</p>
-
-<p>Current Affiliation: <a href="https://mirkin-group.northwestern.edu/">Mirkin Research Group</a>, Department of Chemistry, Northwestern University<br>
-Previously at: <a href="https://www.schroerslab.com/">Schroers Lab</a>, Department of Mechanical Engineering &amp; Materials Science, Yale University</p>
-
-<div class="float" data-clear="">
-  
-
-</div>
-
-<p>
-  <a href="/cv/ArindamCV_for_website.pdf" target="_blank" rel="noopener">
-    Open CV (PDF)
-  </a>
-</p>
-
-<iframe src="/cv/ArindamCV_for_website.pdf" title="Arindam Raj — Curriculum Vitae" width="100%" height="800" style="border: none;">
-</iframe>
 
 <!--
 ---
