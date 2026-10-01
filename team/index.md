@@ -1,6 +1,6 @@
 ---
 title: Team
-nav:
+nav: false
   order: 3
   tooltip: About our team
 ---
