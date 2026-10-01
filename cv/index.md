@@ -1,5 +1,5 @@
 ---
-title: CV
+title: About
 nav:
   order: 4
   tooltip: About Arindam Raj
