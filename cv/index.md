@@ -95,6 +95,7 @@ nav:
     </p>
 
     <p>
+    I am seeking faculty opportunities in materials science and engineering and related fields to establish an independent research group. This site presents my research  and my vision for a future research group.
       <strong>Current affiliation:</strong>
       <a href="https://mirkin-group.northwestern.edu/">
         Mirkin Research Group
