@@ -66,10 +66,10 @@
 
   <meta name="author" content="john-doe">
   <meta property="og:type" content="article">
-  <meta property="og:updated_time" content="2026-10-05T22:50:23+00:00">
+  <meta property="og:updated_time" content="2026-10-05T22:58:48+00:00">
   <meta property="article:published_time" content="2023-02-23T00:00:00+00:00">
-  <meta property="article:modified_time" content="2026-10-05T22:50:23+00:00">
-  <meta name="revised" content="2026-10-05T22:50:23+00:00">
+  <meta property="article:modified_time" content="2026-10-05T22:58:48+00:00">
+  <meta name="revised" content="2026-10-05T22:58:48+00:00">
 
 
 <script type="application/ld+json">
@@ -79,7 +79,7 @@
       "@type": "BlogPosting",
       "author": { "@type": "Person", "name": "Example post 3" },
       "datePublished": "2023-02-23T00:00:00+00:00",
-      "dateModified": "2026-10-05T22:50:23+00:00",
+      "dateModified": "2026-10-05T22:58:48+00:00",
     
     "name": "Example post 3",
     "description": "Advanced Multiscale Design, Fabrication, and Characterization. Developing advanced characterization and fabrication techniques for complex materials.",
@@ -351,7 +351,8 @@ body .photo-credits p {
   overflow-wrap: anywhere;
 }
 
-/* 2. A plain dark footer; only its background image is removed. */
+/* 2. Keep the footer image on all pages. A dark overlay covers the top
+   75%, then fades so more of the micrograph shows near the bottom. */
 body footer.background {
   background: #101820;
   color: #e4edf6;
@@ -359,7 +360,18 @@ body footer.background {
 }
 
 body footer.background::before {
-  display: none;
+  display: block;
+  background-image:
+    linear-gradient(to bottom,
+      rgba(8, 12, 18, 0.96) 0%,
+      rgba(8, 12, 18, 0.94) 75%,
+      rgba(8, 12, 18, 0.50) 100%),
+    var(--image);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 1;
+  pointer-events: none;
 }
 
 /* 3. News: headline, then outlet and date. */

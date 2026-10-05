@@ -345,7 +345,8 @@ body .photo-credits p {
   overflow-wrap: anywhere;
 }
 
-/* 2. A plain dark footer; only its background image is removed. */
+/* 2. Keep the footer image on all pages. A dark overlay covers the top
+   75%, then fades so more of the micrograph shows near the bottom. */
 body footer.background {
   background: #101820;
   color: #e4edf6;
@@ -353,7 +354,18 @@ body footer.background {
 }
 
 body footer.background::before {
-  display: none;
+  display: block;
+  background-image:
+    linear-gradient(to bottom,
+      rgba(8, 12, 18, 0.96) 0%,
+      rgba(8, 12, 18, 0.94) 75%,
+      rgba(8, 12, 18, 0.50) 100%),
+    var(--image);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 1;
+  pointer-events: none;
 }
 
 /* 3. News: headline, then outlet and date. */
