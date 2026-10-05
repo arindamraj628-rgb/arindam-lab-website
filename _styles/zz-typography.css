@@ -1,0 +1,159 @@
+/*
+ * Add this file to _styles/zz-typography.css in your GitHub repository.
+ * The template automatically includes CSS files from _styles.
+ * Delete this file to restore the previous typography.
+ * Keep _styles/-theme.scss and _includes/fonts.html unchanged.
+ */
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap");
+
+html:root {
+  /* Respect the visitor's default browser font size. */
+  font-size: 100%;
+
+  --title: "Manrope", system-ui, sans-serif;
+  --heading: "Manrope", system-ui, sans-serif;
+  --body: "Manrope", system-ui, sans-serif;
+
+  --thin: 400;
+  --regular: 400;
+  --semi-bold: 600;
+  --bold: 700;
+  --spacing: 1.7;
+  --compact: 1.5;
+
+  --large: 1.25rem;
+  --xl: 1.5rem;
+  --xxl: 2rem;
+
+  /* Main size controls. rem units scale with browser preferences. */
+  --raj-text: clamp(1.0625rem, 1rem + 0.2vw, 1.125rem);
+  --raj-small: 0.9375rem;
+  --raj-nav: clamp(0.875rem, 0.8rem + 0.2vw, 0.9375rem);
+  --raj-page-title: clamp(1.875rem, 1.5rem + 1.5vw, 2.25rem);
+  --raj-section-title: clamp(1.5rem, 1.2rem + 0.9vw, 1.875rem);
+  --raj-subheading: clamp(1.25rem, 1.1rem + 0.5vw, 1.5rem);
+}
+
+body {
+  font-family: var(--body);
+  font-size: var(--raj-text);
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+body :is(h1, h2, h3, h4, h5, h6) {
+  font-family: var(--heading);
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: -0.02em;
+  text-transform: none;
+  text-wrap: balance;
+}
+
+body h1 { font-size: var(--raj-page-title); }
+body h2 { font-size: var(--raj-section-title); }
+body h3 { font-size: var(--raj-subheading); }
+body h4 { font-size: 1.25rem; }
+body h5 { font-size: 1.125rem; }
+body h6 { font-size: 1.0625rem; }
+
+/* Keep the existing paragraph alignment and hyphenation. */
+body p { line-height: 1.7; }
+
+body header nav,
+body header.raj-personal-homepage[data-big] > nav {
+  font-size: var(--raj-nav);
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+
+body .button,
+body button,
+body input,
+body select,
+body textarea {
+  font-family: var(--body);
+  font-size: 1rem;
+}
+
+/* Compact text in cards, publications, and captions. */
+body .card-text,
+body .citation-text {
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+body .card-title,
+body .citation-title,
+body .portrait-name {
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.45;
+}
+
+body .feature-title {
+  font-size: clamp(1.25rem, 1.1rem + 0.4vw, 1.375rem);
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+body .figure-caption,
+body .citation-details,
+body .tags,
+body footer {
+  font-size: var(--raj-small);
+  line-height: 1.65;
+}
+
+body .portrait-description,
+body .portrait-affiliation {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* These selectors also override the homepage plugin's later styles. */
+body header.raj-personal-homepage[data-big] .raj-personal-name {
+  font-family: var(--title);
+  font-size: clamp(1.82rem, 3.5vw, 2.52rem);
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+}
+
+body header.raj-personal-homepage[data-big] .raj-personal-role {
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+body header.raj-personal-homepage[data-big] .raj-personal-intro .raj-personal-institution {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+body header.raj-personal-homepage[data-big] .raj-personal-intro .raj-personal-statement {
+  font-size: var(--raj-text);
+  line-height: 1.7;
+}
+
+body header.raj-personal-homepage[data-big] .raj-personal-action {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+body .raj-personal-vision > .raj-personal-vision-label {
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+body .raj-personal-vision > .raj-personal-vision-title {
+  font-size: var(--raj-section-title);
+  font-weight: 600;
+  line-height: 1.35;
+  letter-spacing: -0.02em;
+}
