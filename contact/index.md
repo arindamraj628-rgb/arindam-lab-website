@@ -6,8 +6,7 @@ nav:
 ---
 
 # {% include icon.html icon="fa-regular fa-envelope" %}Contact
-
-Feel free to reach out for any queries, or collaboration ideas!
+<p align="center">Feel free to reach out for any queries, or collaboration ideas!</p>
 
 {%
   include button.html
