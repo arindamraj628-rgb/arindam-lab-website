@@ -15,7 +15,7 @@
 # It never writes to the source pages, YAML data, or other plugins.
 # It adds no browser JavaScript and no gem dependencies.
 #
-# INCLUDES: Compact photo credits, plain footer, dated news entries, quieter
+# INCLUDES: Compact photo credits, gradient footer, dated news entries, quieter
 # header, shorter prose lines, consistent research cards and short summaries,
 # "Additional research" heading, and left-aligned narrow/mobile prose.
 # Your fonts, 1200px outer layout, logo, and existing header layout are retained.
@@ -210,7 +210,8 @@ module RajRemovableRefinements
       overflow-wrap: anywhere;
     }
     
-    /* 2. A plain dark footer; only its background image is removed. */
+    /* 2. Keep the footer image on all pages. A dark overlay covers the top
+       75%, then fades so more of the micrograph shows near the bottom. */
     body footer.background {
       background: #101820;
       color: #e4edf6;
@@ -218,7 +219,18 @@ module RajRemovableRefinements
     }
     
     body footer.background::before {
-      display: none;
+      display: block;
+      background-image:
+        linear-gradient(to bottom,
+          rgba(8, 12, 18, 0.96) 0%,
+          rgba(8, 12, 18, 0.94) 75%,
+          rgba(8, 12, 18, 0.50) 100%),
+        var(--image);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      opacity: 1;
+      pointer-events: none;
     }
     
     /* 3. News: headline, then outlet and date. */
