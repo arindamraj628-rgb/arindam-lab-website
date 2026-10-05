@@ -6,7 +6,10 @@ nav:
 ---
 
 # {% include icon.html icon="fa-regular fa-envelope" %}Contact
-<p align="center">Feel free to reach out for any queries, or collaboration ideas!</p>
+
+<p style="text-align: center; text-align-last: center;">
+  Feel free to reach out for any queries or collaboration ideas!
+</p>
 
 {%
   include button.html
