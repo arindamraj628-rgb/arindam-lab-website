@@ -102,7 +102,7 @@ nav:
       </a>,
       Department of Chemistry, Northwestern University
       <br>
-      <strong>Previously at:</strong>
+      <strong>Previously:</strong>
       <a href="https://www.schroerslab.com/">Schroers Lab</a>,
       Department of Mechanical Engineering &amp; Materials Science,
       Yale University
