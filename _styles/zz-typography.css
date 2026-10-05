@@ -178,3 +178,65 @@ body header.raj-personal-homepage[data-big] {
     calc((100% - var(--raj-page-width)) / 2)
   );
 }
+
+/* Center headers on small screens only */
+@media (max-width: 700px) {
+
+  /* HOMEPAGE: center the logo */
+  body header.raj-personal-homepage[data-big] > .home {
+    justify-self: center;
+    justify-content: center;
+  }
+
+  /* HOMEPAGE: center navigation, including wrapped rows */
+  body header.raj-personal-homepage[data-big] > nav {
+    justify-self: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* OTHER PAGES: stack header items centrally */
+  body header:not([data-big]) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  /* Place the logo above the subtitle */
+  body header:not([data-big]) > .home {
+    flex: 0 1 auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Center the title and subtitle */
+  body header:not([data-big]) .title-text {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 30ch;
+    text-align: center;
+  }
+
+  body header:not([data-big]) .subtitle {
+    text-wrap: balance;
+  }
+
+  /* Center the existing menu button */
+  body header:not([data-big]) > .nav-toggle {
+    align-self: center;
+    margin-inline: auto;
+  }
+
+  /* Center the menu links when expanded */
+  body header:not([data-big]) > nav {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
