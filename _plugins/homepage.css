@@ -49,14 +49,20 @@ header.raj-personal-homepage[data-big] > nav a {
 
 header.raj-personal-homepage[data-big] .raj-personal-intro {
   grid-column: 1 / -1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   min-width: 0;
-  padding-top: 14px;
-  text-align: left;
+  width: 100%;
+  max-width: 840px;
+  margin: 0 auto;
+  padding: 20px 0 4px;
+  text-align: center;
 }
 
 header.raj-personal-homepage[data-big] .raj-personal-intro p {
   margin: 0;
-  text-align: left;
+  text-align: center;
   text-align-last: auto;
   word-spacing: normal;
   letter-spacing: normal;
@@ -74,7 +80,7 @@ header.raj-personal-homepage[data-big] .raj-personal-eyebrow {
 }
 
 header.raj-personal-homepage[data-big] .raj-personal-name {
-  margin: 0 0 18px;
+  margin: 0 0 20px;
   padding: 0;
   border: 0;
   color: #fff;
@@ -82,7 +88,7 @@ header.raj-personal-homepage[data-big] .raj-personal-name {
   font-weight: 600;
   line-height: 1.12;
   letter-spacing: -0.035em;
-  text-align: left;
+  text-align: center;
   text-transform: none;
   overflow-wrap: normal;
 }
@@ -93,25 +99,30 @@ header.raj-personal-homepage[data-big] .raj-personal-role {
   color: #fff;
 }
 
-header.raj-personal-homepage[data-big] .raj-personal-institution {
+header.raj-personal-homepage[data-big] .raj-personal-intro .raj-personal-institution {
+  margin-top: 4px;
   font-size: 1rem;
   line-height: 1.6;
   color: #d4dfe9;
 }
 
-header.raj-personal-homepage[data-big] .raj-personal-statement {
+header.raj-personal-homepage[data-big] .raj-personal-intro .raj-personal-statement {
+  width: 100%;
   max-width: 720px;
-  margin-top: 24px;
+  margin: 24px 0 0;
+  text-wrap: balance;
   color: #e4edf6;
   font-size: 1rem;
   line-height: 1.75;
 }
 
 header.raj-personal-homepage[data-big] .raj-personal-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  margin-top: 26px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  width: 100%;
+  max-width: 440px;
+  margin: 28px auto 0;
 }
 
 header.raj-personal-homepage[data-big] .raj-personal-action {
@@ -189,6 +200,14 @@ header.raj-personal-homepage[data-big] a:focus-visible {
   }
 
   header.raj-personal-homepage[data-big] .raj-personal-intro {
-    padding-top: 8px;
+    padding-top: 20px;
+  }
+}
+
+/* Stack the equally sized buttons on narrow screens. */
+@media (max-width: 480px) {
+  header.raj-personal-homepage[data-big] .raj-personal-actions {
+    grid-template-columns: minmax(0, 1fr);
+    max-width: 280px;
   }
 }
