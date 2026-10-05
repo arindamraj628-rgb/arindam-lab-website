@@ -66,10 +66,10 @@
 
   <meta name="author" content="sarah-johnson">
   <meta property="og:type" content="article">
-  <meta property="og:updated_time" content="2026-10-05T22:30:20+00:00">
+  <meta property="og:updated_time" content="2026-10-05T22:50:23+00:00">
   <meta property="article:published_time" content="2019-01-07T00:00:00+00:00">
-  <meta property="article:modified_time" content="2026-10-05T22:30:20+00:00">
-  <meta name="revised" content="2026-10-05T22:30:20+00:00">
+  <meta property="article:modified_time" content="2026-10-05T22:50:23+00:00">
+  <meta name="revised" content="2026-10-05T22:50:23+00:00">
 
 
 <script type="application/ld+json">
@@ -79,7 +79,7 @@
       "@type": "BlogPosting",
       "author": { "@type": "Person", "name": "Example post 1" },
       "datePublished": "2019-01-07T00:00:00+00:00",
-      "dateModified": "2026-10-05T22:30:20+00:00",
+      "dateModified": "2026-10-05T22:50:23+00:00",
     
     "name": "Example post 1",
     "description": "Advanced Multiscale Design, Fabrication, and Characterization. Developing advanced characterization and fabrication techniques for complex materials.",
@@ -324,6 +324,219 @@
   <script src="/_scripts/tooltip.js"></script>
 
 
+<style id="raj-removable-refinements">
+/* RAJ website refinements. Injected by this build-time plugin.
+   The numbered sections correspond to the requested changes.
+   Existing fonts, 1200px layout, and mobile header centering are retained. */
+
+/* 1. Compact, left-aligned contact photo credits. */
+body main > section[data-size="credits"] {
+  padding-block: 24px;
+  flex-grow: 0;
+}
+
+body .photo-credits .cols {
+  margin: 0;
+  gap: 24px;
+}
+
+body .photo-credits p {
+  margin: 0;
+  font-size: 0.875rem;
+  line-height: 1.6;
+  text-align: left;
+  text-align-last: auto;
+  -webkit-hyphens: none;
+  hyphens: none;
+  overflow-wrap: anywhere;
+}
+
+/* 2. A plain dark footer; only its background image is removed. */
+body footer.background {
+  background: #101820;
+  color: #e4edf6;
+  --text: #e4edf6;
+}
+
+body footer.background::before {
+  display: none;
+}
+
+/* 3. News: headline, then outlet and date. */
+body .news-list {
+  max-width: 78ch;
+  margin: 24px auto 0;
+  text-align: left;
+}
+
+body .news-entry {
+  padding: 24px 0;
+  border-bottom: 1px solid var(--light-gray);
+}
+
+body .news-entry:first-child { padding-top: 0; }
+body .news-entry:last-child { border-bottom: 0; }
+
+body .news-title {
+  margin: 0 0 8px;
+  padding: 0;
+  border: 0;
+  font-size: 1.25rem;
+  line-height: 1.4;
+  font-weight: 600;
+  text-align: left;
+}
+
+body .news-title a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+body .news-title a:hover,
+body .news-title a:focus-visible {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+body .news-meta {
+  margin: 0;
+  font-size: 0.9375rem;
+  line-height: 1.5;
+  color: var(--dark-gray);
+  text-align: left;
+}
+
+/* 4. Quieter header micrograph, darkest behind the central text.
+   Both selectors are needed because the homepage plugin adds later CSS. */
+body header.background {
+  background-color: #101820;
+}
+
+body header.background::before,
+body header.raj-personal-homepage[data-big]::before {
+  background-image:
+    radial-gradient(ellipse at center,
+      rgba(16, 24, 32, 0.55) 0%,
+      rgba(16, 24, 32, 0.10) 80%),
+    var(--image);
+  opacity: 0.22;
+}
+
+/* 5. A readable measure for prose, within the existing wider layout.
+   The homepage vision label keeps its current width and centering. */
+body .raj-prose,
+body main > section > p:not(.raj-personal-vision-label) {
+  max-width: 76ch;
+  margin-inline: auto;
+}
+
+/* 6. Research cards: three equal widths, with incomplete rows centered. */
+body .project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: center;
+  gap: 24px;
+  margin: 28px 0 0;
+}
+
+body .project-grid > .card {
+  display: flex;
+  flex-direction: column;
+  width: calc((100% - 48px) / 3);
+  max-width: none;
+  min-width: 0;
+  margin: 0;
+}
+
+body .project-grid .card-image {
+  display: block;
+  flex: 0 0 auto;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  background: #fff;
+}
+
+body .project-grid .card-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: auto;
+  object-fit: contain;
+  padding: 12px;
+}
+
+body .project-grid .card-text {
+  flex: 1;
+  width: 100%;
+  align-items: stretch;
+  gap: 14px;
+  padding: 22px;
+}
+
+body .project-grid .card-title {
+  min-height: 2.9em;
+  line-height: 1.45;
+}
+
+body .project-grid .card-subtitle {
+  margin-top: 0 !important;
+  min-height: 3em;
+  line-height: 1.5;
+}
+
+body .project-grid .card-text > .tags {
+  /* Override the template's margin: 0 !important on card children. */
+  margin-top: auto !important;
+  padding-top: 8px;
+  justify-content: flex-start;
+}
+
+/* 7. Left alignment and natural wrapping inside narrow cards. */
+body .project-grid .card-title,
+body .project-grid .card-subtitle,
+body .project-grid .card-text p {
+  text-align: left;
+  text-align-last: auto;
+  -webkit-hyphens: none;
+  hyphens: none;
+  overflow-wrap: break-word;
+}
+
+@media (max-width: 1000px) {
+  body .project-grid > .card {
+    width: calc((100% - 24px) / 2);
+  }
+}
+
+@media (max-width: 650px) {
+  body .project-grid > .card {
+    width: 100%;
+    max-width: 440px;
+  }
+
+  body .project-grid .card-title,
+  body .project-grid .card-subtitle {
+    min-height: 0;
+  }
+}
+
+@media (max-width: 700px) {
+  body main p {
+    text-align: left;
+    text-align-last: auto;
+    -webkit-hyphens: none;
+    hyphens: none;
+  }
+
+  /* Keep photo captions centered. Inline-centered introductions also win. */
+  body main .figure-caption,
+  body main .figure-caption p {
+    text-align: center;
+  }
+}
+
+</style>
 </head>
 
   <body>

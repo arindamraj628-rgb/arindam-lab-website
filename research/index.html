@@ -370,6 +370,219 @@
   <script src="/_scripts/tooltip.js"></script>
 
 
+<style id="raj-removable-refinements">
+/* RAJ website refinements. Injected by this build-time plugin.
+   The numbered sections correspond to the requested changes.
+   Existing fonts, 1200px layout, and mobile header centering are retained. */
+
+/* 1. Compact, left-aligned contact photo credits. */
+body main > section[data-size="credits"] {
+  padding-block: 24px;
+  flex-grow: 0;
+}
+
+body .photo-credits .cols {
+  margin: 0;
+  gap: 24px;
+}
+
+body .photo-credits p {
+  margin: 0;
+  font-size: 0.875rem;
+  line-height: 1.6;
+  text-align: left;
+  text-align-last: auto;
+  -webkit-hyphens: none;
+  hyphens: none;
+  overflow-wrap: anywhere;
+}
+
+/* 2. A plain dark footer; only its background image is removed. */
+body footer.background {
+  background: #101820;
+  color: #e4edf6;
+  --text: #e4edf6;
+}
+
+body footer.background::before {
+  display: none;
+}
+
+/* 3. News: headline, then outlet and date. */
+body .news-list {
+  max-width: 78ch;
+  margin: 24px auto 0;
+  text-align: left;
+}
+
+body .news-entry {
+  padding: 24px 0;
+  border-bottom: 1px solid var(--light-gray);
+}
+
+body .news-entry:first-child { padding-top: 0; }
+body .news-entry:last-child { border-bottom: 0; }
+
+body .news-title {
+  margin: 0 0 8px;
+  padding: 0;
+  border: 0;
+  font-size: 1.25rem;
+  line-height: 1.4;
+  font-weight: 600;
+  text-align: left;
+}
+
+body .news-title a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+body .news-title a:hover,
+body .news-title a:focus-visible {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+body .news-meta {
+  margin: 0;
+  font-size: 0.9375rem;
+  line-height: 1.5;
+  color: var(--dark-gray);
+  text-align: left;
+}
+
+/* 4. Quieter header micrograph, darkest behind the central text.
+   Both selectors are needed because the homepage plugin adds later CSS. */
+body header.background {
+  background-color: #101820;
+}
+
+body header.background::before,
+body header.raj-personal-homepage[data-big]::before {
+  background-image:
+    radial-gradient(ellipse at center,
+      rgba(16, 24, 32, 0.55) 0%,
+      rgba(16, 24, 32, 0.10) 80%),
+    var(--image);
+  opacity: 0.22;
+}
+
+/* 5. A readable measure for prose, within the existing wider layout.
+   The homepage vision label keeps its current width and centering. */
+body .raj-prose,
+body main > section > p:not(.raj-personal-vision-label) {
+  max-width: 76ch;
+  margin-inline: auto;
+}
+
+/* 6. Research cards: three equal widths, with incomplete rows centered. */
+body .project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: center;
+  gap: 24px;
+  margin: 28px 0 0;
+}
+
+body .project-grid > .card {
+  display: flex;
+  flex-direction: column;
+  width: calc((100% - 48px) / 3);
+  max-width: none;
+  min-width: 0;
+  margin: 0;
+}
+
+body .project-grid .card-image {
+  display: block;
+  flex: 0 0 auto;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  background: #fff;
+}
+
+body .project-grid .card-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: auto;
+  object-fit: contain;
+  padding: 12px;
+}
+
+body .project-grid .card-text {
+  flex: 1;
+  width: 100%;
+  align-items: stretch;
+  gap: 14px;
+  padding: 22px;
+}
+
+body .project-grid .card-title {
+  min-height: 2.9em;
+  line-height: 1.45;
+}
+
+body .project-grid .card-subtitle {
+  margin-top: 0 !important;
+  min-height: 3em;
+  line-height: 1.5;
+}
+
+body .project-grid .card-text > .tags {
+  /* Override the template's margin: 0 !important on card children. */
+  margin-top: auto !important;
+  padding-top: 8px;
+  justify-content: flex-start;
+}
+
+/* 7. Left alignment and natural wrapping inside narrow cards. */
+body .project-grid .card-title,
+body .project-grid .card-subtitle,
+body .project-grid .card-text p {
+  text-align: left;
+  text-align-last: auto;
+  -webkit-hyphens: none;
+  hyphens: none;
+  overflow-wrap: break-word;
+}
+
+@media (max-width: 1000px) {
+  body .project-grid > .card {
+    width: calc((100% - 24px) / 2);
+  }
+}
+
+@media (max-width: 650px) {
+  body .project-grid > .card {
+    width: 100%;
+    max-width: 440px;
+  }
+
+  body .project-grid .card-title,
+  body .project-grid .card-subtitle {
+    min-height: 0;
+  }
+}
+
+@media (max-width: 700px) {
+  body main p {
+    text-align: left;
+    text-align-last: auto;
+    -webkit-hyphens: none;
+    hyphens: none;
+  }
+
+  /* Keep photo captions centered. Inline-centered introductions also win. */
+  body main .figure-caption,
+  body main .figure-caption p {
+    text-align: center;
+  }
+}
+
+</style>
 </head>
 
   <body>
@@ -2253,6 +2466,21 @@
 
 <h2 id="featured">Featured</h2>
 
+<div class="project-grid">
+
+
+
+
+
+
+  
+
+  
+
+  
+    
+
+     
 <div class="card" data-style="">
   <a href="https://www.nature.com/articles/s41467-026-75351-8" aria-label="High-Throughput Local Diffusion Mapping" class="card-image">
     <img src="/images/ldm.png" alt="High-Throughput Local Diffusion Mapping" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
@@ -2266,12 +2494,12 @@
     
 
     
-      <span class="card-subtitle">Multiscale diffusion measurement with nanoscale resolution</span>
+      <span class="card-subtitle">Spatially resolved transport in alloy microstructures</span>
     
 
     
       <p>
-        Introducing a high-resolution, high-throughput characterization technique. LDM determines what diffuses locally through microstructures, experimentally realized by pressing a nanomold onto a microstructure, forming a nanorod array
+        Local deformation mapping uses thermomechanical nanomolding to reveal spatial variations in atomic transport across alloy microstructures, connecting nanoscale features with larger-scale transport behavior.
 
       </p>
     
@@ -2305,6 +2533,10 @@
   </div>
 </div>
 
+  
+    
+
+     
 <div class="card" data-style="">
   <a href="https://pubs.acs.org/ancac3/article/15/9/14275/1416940/Nanomolding-of-Gold-and-Gold-Silicon" aria-label="Top-down Thermomechanical Nanofabrication" class="card-image">
     <img src="/images/eutectic_diffusion.png" alt="Top-down Thermomechanical Nanofabrication" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
@@ -2318,12 +2550,12 @@
     
 
     
-      <span class="card-subtitle">Fast diffusion in eutectic systems enables nanofabrication at room temperature</span>
+      <span class="card-subtitle">Low-temperature nanomolding through eutectic interface diffusion</span>
     
 
     
       <p>
-        Revealing enhanced eutectic interface diffusion, which provides a thermomechanical nanofabrication method at low temperatures.
+        Enhanced diffusion at gold–silicon eutectic interfaces enables thermomechanical nanomolding at low temperatures, including room-temperature fabrication of gold and gold–silicon nanostructures.
 
       </p>
     
@@ -2353,6 +2585,10 @@
   </div>
 </div>
 
+  
+    
+
+     
 <div class="card" data-style="">
   <a href="https://pubs.acs.org/ancac3/article/17/17/16291/871487/Inspired-Beyond-Nature-Three-Decades-of-Spherical" aria-label="Bottom-up Assembly of Nanomaterials" class="card-image">
     <img src="/images/pae_anim.svg" alt="Bottom-up Assembly of Nanomaterials" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
@@ -2366,12 +2602,12 @@
     
 
     
-      <span class="card-subtitle">DNA strands can act as bonds on the nanocale to programmably organize nanomaterials into extended assemblies</span>
+      <span class="card-subtitle">DNA-programmed organization of nanoparticles</span>
     
 
     
       <p>
-        (publications out soon!)
+        DNA-mediated interactions guide nanoparticles into extended assemblies. This research explores how programmable bonds control nanoscale organization and the formation of ordered materials.
 
       </p>
     
@@ -2396,6 +2632,11 @@
     
   </div>
 </div>
+
+  
+
+
+</div>
   </section>
 
   
@@ -2409,9 +2650,24 @@
   <size></size>
 -->
 
-<h2 id="more">More</h2>
+<h2 id="additional-research">Additional research</h2>
 
-<div class="card" data-style="small">
+<div class="project-grid">
+
+
+
+
+
+
+  
+
+  
+
+  
+    
+
+     
+<div class="card" data-style="">
   <a href="https://www.sciencedirect.com/science/article/abs/pii/S0022311524000461" aria-label="Metallic Glass under Irradiation" class="card-image">
     <img src="/images/j_nuc.gif" alt="Metallic Glass under Irradiation" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
   </a>
@@ -2424,12 +2680,12 @@
     
 
     
-      <span class="card-subtitle">Strengthening of Zr-based metallic glass at low dose helium ion irradiation</span>
+      <span class="card-subtitle">Dose-dependent changes in metallic-glass hardness</span>
     
 
     
       <p>
-        A strengthening effect in Zr-based metallic glass under low-dose helium ion irradiation in the absence of nanocrystals is observed. This is measured through nanoindentation hardness measurements revealing an initial increase in hardness with low irradiation doses, followed by a rapid decrease at higher doses.
+        Low-dose helium irradiation increases hardness in zirconium-based metallic glass without observed nanocrystals. At higher doses, nanoindentation measurements show a decrease in hardness.
 
       </p>
     
@@ -2455,7 +2711,11 @@
   </div>
 </div>
 
-<div class="card" data-style="small">
+  
+    
+
+     
+<div class="card" data-style="">
   <a href="https://www.sciencedirect.com/science/article/pii/S1359645422008746" aria-label="Machine learning performance in metallic glass physics" class="card-image">
     <img src="/images/ML_BMG.jpg" alt="Machine learning performance in metallic glass physics" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
   </a>
@@ -2468,12 +2728,12 @@
     
 
     
-      <span class="card-subtitle">Comparing machine learning versus human learning in predicting glass-forming ability of metallic glasses</span>
+      <span class="card-subtitle">Physical insight for predicting glass formation</span>
     
 
     
       <p>
-        The limited performance of ML model originates from the inability to accurately represent alloy features through elemental features, showing that physical insights about mixing behavior are required to develop predictable ML models.
+        Comparing machine learning with physical insight shows the limits of elemental descriptors for predicting glass formation and highlights the importance of alloy mixing behavior.
 
       </p>
     
@@ -2497,6 +2757,11 @@
 
     
   </div>
+</div>
+
+  
+
+
 </div>
   </section>
 
