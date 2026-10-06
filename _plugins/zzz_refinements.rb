@@ -39,7 +39,7 @@ module RajRemovableRefinements
     {
       "High-Throughput Local Diffusion Mapping": {
         "subtitle": "Spatially resolved transport in alloy microstructures",
-        "description": "Local deformation mapping uses thermomechanical nanomolding to reveal spatial variations in atomic transport across alloy microstructures, connecting nanoscale features with larger-scale transport behavior."
+        "description": "Local deformation mapping uses thermomechanical nanomolding to reveal spatial variations in atomic transport across alloy microstructures, mapping diffusivity as a function of variations in the microstructural features."
       },
       "Top-down Thermomechanical Nanofabrication": {
         "subtitle": "Low-temperature nanomolding through eutectic interface diffusion",
@@ -47,7 +47,7 @@ module RajRemovableRefinements
       },
       "Bottom-up Assembly of Nanomaterials": {
         "subtitle": "DNA-programmed organization of nanoparticles",
-        "description": "DNA-mediated interactions guide nanoparticles into extended assemblies. This research explores how programmable bonds control nanoscale organization and the formation of ordered materials."
+        "description": "My current research explores how programmable DNA-bonds control nanoscale organization and the formation of ordered materials. Complementary single strands of DNA interact, guiding nanoparticles into extended assemblies. Publications coming soon!"
       },
       "Metallic Glass under Irradiation": {
         "subtitle": "Dose-dependent changes in metallic-glass hardness",
