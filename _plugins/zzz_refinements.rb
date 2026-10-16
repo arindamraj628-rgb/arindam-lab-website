@@ -57,10 +57,7 @@ module RajRemovableRefinements
         "subtitle": "Physical insight for predicting glass formation",
         "description": "Comparing machine learning with physical insight shows the limits of elemental descriptors for predicting glass formation and highlights the importance of alloy mixing behavior."
       }
-        "Machine learning performance in metallic glass physics": {
-        "subtitle": "Physical insight for predicting glass formation",
-        "description": "Comparing machine learning with physical insight shows the limits of elemental descriptors for predicting glass formation and highlights the importance of alloy mixing behavior."
-      }
+    
     }
   PROJECTS_JSON
 
