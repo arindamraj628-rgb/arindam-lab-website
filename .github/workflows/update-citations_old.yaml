@@ -27,6 +27,11 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 15
 
+    # Coordinate citation writers before checkout, including different callers.
+    concurrency:
+      group: citation-writer-${{ github.event.pull_request.head.repo.full_name || github.repository }}-${{ github.head_ref || github.ref_name }}
+      cancel-in-progress: false
+
     steps:
       - name: Debug dump
         if: runner.debug == '1'
@@ -36,8 +41,8 @@ jobs:
         if: github.event.action != 'closed'
         uses: actions/checkout@v4
         with:
-          repository: ${{ github.event.pull_request.head.repo.full_name }}
-          ref: ${{ github.head_ref }}
+          repository: ${{ github.event.pull_request.head.repo.full_name || github.repository }}
+          ref: ${{ github.head_ref || github.ref_name }}
 
       - name: Set up Python
         if: github.event.action != 'closed'
