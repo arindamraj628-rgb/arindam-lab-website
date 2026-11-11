@@ -1,7 +1,7 @@
 ---
 ---
 
-# Towards More Durable Structural Materials For Extreme Conditions
+# Structural Materials For Extreme Conditions
 <p style="text-align: center;">How can structural materials perform better under high temperatures and other extreme conditions?</p> I develop methods to map how atoms move through metals, alloys, and composite microstructures and connect this transport to material performance. This knowledge will be used to develop design rules for more durable materials with extended lifetimes under high temperatures and other extreme conditions.
 
 
