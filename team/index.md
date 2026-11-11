@@ -7,7 +7,7 @@ nav: false
 
 # {% include icon.html icon="fa-solid fa-users" %}Team
 
-Feel free to reach out for any queries, discussions, or collaborations!
+Feel free to reach out for any queries, or collaboration ideas!
 
 {% include section.html %}
 
