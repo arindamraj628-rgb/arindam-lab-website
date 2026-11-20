@@ -1,5 +1,27 @@
 # DO NOT EDIT, GENERATED AUTOMATICALLY
 
+- id: doi:10.1021/jacs.6c16846
+  title: "<i>In Situ</i>\n                    STEM Imaging of Colloidal\nCrystals\
+    \ Based on Programmable Atom Equivalents"
+  authors:
+  - Arindam Raj
+  - Ana Clara Zampirolli Leal
+  - Nathan D. Rosenmann
+  - Christopher Sharpe
+  - Roberto dos Reis
+  - Tirzah Abbott
+  - George Winstone
+  - Vinayak P. Dravid
+  - Nathan C. Gianneschi
+  - Chad A. Mirkin
+  publisher: 'Journal of the American
+
+    Chemical Society'
+  date: '2026-11-20'
+  link: https://doi.org/hcthn4
+  orcid: 0000-0001-7277-6770
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.1038/s41467-026-75351-8
   title: Local deformation mapping reveals diffusion through microstructures
   authors:
