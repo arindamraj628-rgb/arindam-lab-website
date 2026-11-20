@@ -47,7 +47,7 @@ module RajRemovableRefinements
       },
       "Bottom-up Assembly of Nanomaterials": {
         "subtitle": "DNA-programmed organization of nanoparticles",
-        "description": "My current research explores how programmable DNA-bonds control nanoscale organization and the formation of ordered materials. Complementary single strands of DNA interact, guiding nanoparticles into extended assemblies. Paper on in-situ STEM is out now!"
+        "description": "My current research explores how programmable DNA-bonds control nanoscale organization and the formation of ordered materials. Complementary single strands of DNA interact, guiding nanoparticles into extended assemblies. Paper on *in-situ* STEM observations of colloidal assembly in aquous buffer is out now!"
       },
       "Metallic Glass under Irradiation": {
         "subtitle": "Dose-dependent changes in metallic-glass hardness",
